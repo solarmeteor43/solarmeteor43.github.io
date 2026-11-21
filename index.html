@@ -1,0 +1,1986 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国际大片_光影视界|全球佳片影像门户</title>
+<meta name="description" content="光影视界是专注国际大片领域的原创视频品牌官网，汇聚全球佳片解读、幕后故事与创作者社区，提供高清正版内容生态与品质体验。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1420'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%23e63946'/%3E%3C/svg%3E">
+<style>
+:root{
+  --gv-bg:#0e1420;
+  --gv-bg2:#141c2b;
+  --gv-card:#1a2436;
+  --gv-card2:#202c42;
+  --gv-line:#2c3a54;
+  --gv-text:#e8edf5;
+  --gv-muted:#95a3ba;
+  --gv-red:#e63946;
+  --gv-red2:#ff5a67;
+  --gv-gold:#f2b33d;
+  --gv-cyan:#4ec5d6;
+  --gv-radius:14px;
+  --gv-max:1200px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:126px;}
+body{
+  background:var(--gv-bg);
+  color:var(--gv-text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+ul{list-style:none;}
+.gv-container{width:100%;max-width:var(--gv-max);margin:0 auto;padding:0 24px;}
+
+/* ---------- 公告条 ---------- */
+.gv-notice{
+  background:linear-gradient(90deg,#1d2a40,#243352 55%,#1d2a40);
+  border-bottom:1px solid var(--gv-line);
+  font-size:13.5px;
+  color:#c4d0e2;
+  position:relative;
+  z-index:60;
+}
+.gv-notice-inner{
+  display:flex;align-items:center;gap:14px;
+  padding:9px 24px;max-width:var(--gv-max);margin:0 auto;
+  overflow:hidden;
+}
+.gv-notice-tag{
+  flex:none;background:var(--gv-red);color:#fff;font-size:11.5px;
+  padding:2px 9px;border-radius:4px;letter-spacing:1px;font-weight:600;
+}
+.gv-notice-list{
+  display:flex;gap:34px;white-space:nowrap;
+  animation:gv-marquee 26s linear infinite;
+}
+.gv-notice-list:hover{animation-play-state:paused;}
+.gv-notice-list li{display:flex;align-items:center;gap:8px;}
+.gv-notice-list b{color:var(--gv-gold);font-weight:600;}
+@keyframes gv-marquee{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-50%);}
+}
+
+/* ---------- 页头 ---------- */
+.gv-header{
+  position:sticky;top:0;z-index:55;
+  background:rgba(14,20,32,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--gv-line);
+}
+.gv-header-inner{
+  display:flex;align-items:center;gap:28px;
+  height:76px;
+  max-width:var(--gv-max);margin:0 auto;padding:0 24px;
+}
+.gv-logo{display:flex;align-items:center;gap:11px;flex:none;}
+.gv-logo-mark{
+  width:40px;height:40px;border-radius:11px;
+  background:linear-gradient(140deg,var(--gv-red),#8e1c26);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 14px rgba(230,57,70,.35);
+}
+.gv-logo-mark svg{width:20px;height:20px;}
+.gv-logo-text strong{
+  display:block;font-size:19px;letter-spacing:2px;line-height:1.2;
+}
+.gv-logo-text span{
+  display:block;font-size:10.5px;color:var(--gv-muted);
+  letter-spacing:2.6px;
+}
+.gv-nav{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap;}
+.gv-nav a{
+  font-size:14.5px;color:#c3cee0;padding:8px 13px;border-radius:8px;
+  transition:.22s;white-space:nowrap;
+}
+.gv-nav a:hover,.gv-nav a.gv-active{color:#fff;background:var(--gv-card2);}
+.gv-header-tools{display:flex;align-items:center;gap:12px;margin-left:auto;}
+.gv-search{
+  display:flex;align-items:center;gap:8px;
+  background:var(--gv-card);border:1px solid var(--gv-line);
+  border-radius:24px;padding:7px 14px;width:210px;
+  transition:.25s;
+}
+.gv-search:focus-within{border-color:var(--gv-red);box-shadow:0 0 0 3px rgba(230,57,70,.14);}
+.gv-search svg{width:15px;height:15px;flex:none;stroke:var(--gv-muted);}
+.gv-search input{
+  background:none;border:none;outline:none;color:var(--gv-text);
+  font-size:13.5px;width:100%;
+}
+.gv-search input::placeholder{color:#6d7c94;}
+.gv-btn-outline{
+  border:1px solid var(--gv-red);color:var(--gv-red2);
+  font-size:13.5px;padding:8px 16px;border-radius:22px;transition:.22s;
+  white-space:nowrap;
+}
+.gv-btn-outline:hover{background:var(--gv-red);color:#fff;}
+.gv-burger{display:none;width:40px;height:40px;border-radius:9px;background:var(--gv-card);align-items:center;justify-content:center;flex-direction:column;gap:5px;}
+.gv-burger span{display:block;width:18px;height:2px;background:var(--gv-text);border-radius:2px;transition:.25s;}
+.gv-burger.gv-open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.gv-burger.gv-open span:nth-child(2){opacity:0;}
+.gv-burger.gv-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+/* 搜索反馈 */
+.gv-search-feedback{
+  position:absolute;right:24px;top:72px;
+  background:var(--gv-card2);border:1px solid var(--gv-line);
+  border-radius:10px;padding:10px 16px;font-size:13px;color:var(--gv-gold);
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+  opacity:0;transform:translateY(-6px);pointer-events:none;transition:.25s;
+  max-width:280px;
+}
+.gv-search-feedback.gv-show{opacity:1;transform:translateY(0);}
+.gv-header{position:sticky;}
+
+/* ---------- 首屏 Hero ---------- */
+.gv-hero{
+  position:relative;
+  padding:64px 0 72px;
+  overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 82% 8%,rgba(230,57,70,.16),transparent 70%),
+    radial-gradient(700px 400px at 6% 90%,rgba(78,197,214,.10),transparent 70%),
+    var(--gv-bg);
+}
+.gv-hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(circle at 50% 40%,#000,transparent 78%);
+  pointer-events:none;
+}
+.gv-hero-inner{
+  position:relative;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;
+}
+.gv-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;color:var(--gv-gold);
+  border:1px solid rgba(242,179,61,.36);border-radius:20px;
+  padding:4px 14px;margin-bottom:20px;letter-spacing:1px;
+}
+.gv-hero-badge i{width:6px;height:6px;border-radius:50%;background:var(--gv-gold);display:block;animation:gv-pulse 1.8s infinite;}
+@keyframes gv-pulse{0%,100%{opacity:1;}50%{opacity:.25;}}
+.gv-hero h1{
+  font-size:52px;line-height:1.14;letter-spacing:2px;font-weight:800;
+  margin-bottom:20px;
+}
+.gv-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(92deg,var(--gv-red2),var(--gv-gold));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.gv-hero-lead{
+  font-size:15.5px;color:#b9c5d8;max-width:520px;margin-bottom:16px;
+}
+.gv-hero-intro{
+  font-size:14px;color:var(--gv-muted);line-height:1.85;
+  border-left:3px solid var(--gv-red);padding-left:16px;margin-bottom:28px;
+}
+.gv-hero-intro b{color:#dbe4f1;font-weight:600;}
+.gv-hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px;}
+.gv-btn-primary{
+  display:inline-flex;align-items:center;gap:8px;
+  background:linear-gradient(120deg,var(--gv-red),#c22633);
+  color:#fff;font-size:14.5px;font-weight:600;
+  padding:12px 26px;border-radius:26px;
+  box-shadow:0 8px 22px rgba(230,57,70,.35);
+  transition:.24s;
+}
+.gv-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(230,57,70,.45);}
+.gv-btn-ghost{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--gv-line);color:#c3cee0;
+  font-size:14.5px;padding:12px 24px;border-radius:26px;transition:.24s;
+}
+.gv-btn-ghost:hover{border-color:var(--gv-cyan);color:var(--gv-cyan);}
+.gv-hero-stats{display:flex;gap:38px;flex-wrap:wrap;}
+.gv-hero-stats li strong{
+  display:block;font-size:28px;font-weight:800;color:#fff;line-height:1.1;
+  letter-spacing:1px;
+}
+.gv-hero-stats li strong i{font-style:normal;font-size:15px;color:var(--gv-red2);margin-left:2px;}
+.gv-hero-stats li span{font-size:12.5px;color:var(--gv-muted);letter-spacing:1px;}
+
+/* 首屏主视觉 */
+.gv-hero-visual{position:relative;}
+.gv-hero-frame{
+  position:relative;border-radius:18px;overflow:hidden;
+  border:1px solid var(--gv-line);
+  box-shadow:0 26px 60px rgba(0,0,0,.55);
+  aspect-ratio:16/10;
+  background:#0a0f18;
+}
+.gv-hero-frame svg{width:100%;height:100%;display:block;}
+.gv-hero-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:66px;height:66px;border-radius:50%;
+  background:rgba(230,57,70,.92);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 0 0 0 rgba(230,57,70,.6);
+  animation:gv-ring 2.4s infinite;
+}
+.gv-hero-play svg{width:24px;height:24px;}
+@keyframes gv-ring{
+  0%{box-shadow:0 0 0 0 rgba(230,57,70,.55);}
+  70%{box-shadow:0 0 0 22px rgba(230,57,70,0);}
+  100%{box-shadow:0 0 0 0 rgba(230,57,70,0);}
+}
+.gv-hero-frame-meta{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:36px 20px 16px;
+  background:linear-gradient(transparent,rgba(4,8,14,.92));
+  display:flex;align-items:flex-end;justify-content:space-between;gap:12px;
+}
+.gv-hero-frame-meta h3{font-size:16px;letter-spacing:.5px;}
+.gv-hero-frame-meta p{font-size:12px;color:var(--gv-muted);margin-top:3px;}
+.gv-hero-frame-meta .gv-tag{flex:none;}
+.gv-tag{
+  display:inline-block;font-size:11.5px;letter-spacing:.5px;
+  padding:3px 10px;border-radius:5px;
+  background:rgba(230,57,70,.18);color:var(--gv-red2);
+  border:1px solid rgba(230,57,70,.32);
+}
+.gv-tag.gv-tag-cyan{background:rgba(78,197,214,.14);color:var(--gv-cyan);border-color:rgba(78,197,214,.3);}
+.gv-tag.gv-tag-gold{background:rgba(242,179,61,.14);color:var(--gv-gold);border-color:rgba(242,179,61,.3);}
+.gv-hero-float{
+  position:absolute;right:-14px;bottom:-18px;
+  background:var(--gv-card2);border:1px solid var(--gv-line);
+  border-radius:12px;padding:11px 16px;
+  font-size:12.5px;color:#c7d2e2;
+  box-shadow:0 14px 34px rgba(0,0,0,.5);
+  display:flex;align-items:center;gap:9px;
+}
+.gv-hero-float b{color:var(--gv-cyan);font-size:15px;}
+
+/* ---------- 通用 section ---------- */
+.gv-section{padding:74px 0;position:relative;}
+.gv-section.gv-alt{background:var(--gv-bg2);border-top:1px solid var(--gv-line);border-bottom:1px solid var(--gv-line);}
+.gv-sec-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:24px;margin-bottom:38px;flex-wrap:wrap;
+}
+.gv-sec-eyebrow{
+  font-size:12px;letter-spacing:3px;color:var(--gv-red2);
+  margin-bottom:10px;font-weight:600;
+}
+.gv-sec-title{font-size:31px;font-weight:800;letter-spacing:1px;line-height:1.25;}
+.gv-sec-title small{
+  display:block;font-size:13.5px;font-weight:400;color:var(--gv-muted);
+  letter-spacing:.5px;margin-top:9px;
+}
+.gv-sec-link{
+  font-size:13.5px;color:var(--gv-muted);border-bottom:1px dashed var(--gv-line);
+  padding-bottom:2px;transition:.22s;white-space:nowrap;
+}
+.gv-sec-link:hover{color:var(--gv-cyan);border-color:var(--gv-cyan);}
+
+/* ---------- 焦点视频 ---------- */
+.gv-focus-grid{
+  display:grid;grid-template-columns:1.55fr 1fr;gap:24px;
+}
+.gv-focus-main,.gv-focus-card{
+  border-radius:var(--gv-radius);overflow:hidden;
+  background:var(--gv-card);border:1px solid var(--gv-line);
+  transition:.28s;
+}
+.gv-focus-main:hover,.gv-focus-card:hover{transform:translateY(-4px);border-color:#3a4c6e;box-shadow:0 18px 40px rgba(0,0,0,.45);}
+.gv-cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0a0f18;}
+.gv-cover svg{width:100%;height:100%;display:block;transition:transform .5s;}
+.gv-focus-main:hover .gv-cover svg,.gv-focus-card:hover .gv-cover svg{transform:scale(1.05);}
+.gv-cover-label{
+  position:absolute;top:12px;left:12px;z-index:2;
+}
+.gv-cover-dur{
+  position:absolute;right:12px;bottom:12px;z-index:2;
+  font-size:11.5px;background:rgba(5,9,15,.82);color:#d7e0ee;
+  padding:2px 8px;border-radius:4px;letter-spacing:.5px;
+}
+.gv-cover-tri{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:52px;height:52px;border-radius:50%;
+  background:rgba(8,13,21,.62);border:1px solid rgba(255,255,255,.28);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;transition:.25s;z-index:2;
+}
+.gv-focus-main:hover .gv-cover-tri,.gv-focus-card:hover .gv-cover-tri,
+.gv-video-card:hover .gv-cover-tri{opacity:1;}
+.gv-cover-tri svg{width:18px;height:18px;}
+.gv-focus-body{padding:20px 22px 22px;}
+.gv-focus-body h3{font-size:20px;letter-spacing:.5px;line-height:1.4;margin-bottom:10px;}
+.gv-focus-body p{font-size:13.5px;color:var(--gv-muted);margin-bottom:16px;}
+.gv-meta-row{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:14px;flex-wrap:wrap;
+}
+.gv-author{display:flex;align-items:center;gap:9px;font-size:13px;color:#c3cee0;}
+.gv-avatar{
+  width:30px;height:30px;border-radius:50%;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12.5px;font-weight:700;color:#fff;letter-spacing:0;
+}
+.gv-stats{display:flex;gap:14px;font-size:12px;color:#7e8ca4;}
+.gv-stats span{display:inline-flex;align-items:center;gap:4px;}
+.gv-act{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:12.5px;color:#8e9cb4;padding:4px 9px;border-radius:14px;
+  border:1px solid transparent;transition:.2s;
+}
+.gv-act:hover{background:var(--gv-card2);color:var(--gv-red2);}
+.gv-act.gv-on{color:var(--gv-red2);background:rgba(230,57,70,.13);border-color:rgba(230,57,70,.3);}
+.gv-act svg{width:14px;height:14px;}
+
+.gv-focus-side{display:flex;flex-direction:column;gap:24px;}
+.gv-focus-card .gv-focus-body{padding:15px 17px 17px;}
+.gv-focus-card .gv-focus-body h3{font-size:15.5px;margin-bottom:8px;}
+.gv-focus-card .gv-focus-body p{font-size:12.5px;margin-bottom:12px;}
+
+/* ---------- 视频流 ---------- */
+.gv-video-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+}
+.gv-video-card{
+  background:var(--gv-card);border:1px solid var(--gv-line);
+  border-radius:var(--gv-radius);overflow:hidden;transition:.28s;
+  display:flex;flex-direction:column;
+}
+.gv-video-card:nth-child(3n+2){background:var(--gv-card2);}
+.gv-video-card:hover{transform:translateY(-5px);border-color:#3a4c6e;box-shadow:0 18px 38px rgba(0,0,0,.45);}
+.gv-video-body{padding:15px 17px 17px;display:flex;flex-direction:column;flex:1;}
+.gv-video-body h3{font-size:15.5px;line-height:1.45;margin-bottom:7px;}
+.gv-video-body p{font-size:12.5px;color:var(--gv-muted);margin-bottom:13px;flex:1;}
+.gv-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:13px;}
+.gv-tags span{
+  font-size:11px;color:#93b6c9;background:rgba(78,197,214,.09);
+  border:1px solid rgba(78,197,214,.18);border-radius:4px;padding:1px 7px;
+}
+.gv-video-foot{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding-top:12px;border-top:1px dashed var(--gv-line);
+}
+.gv-video-foot .gv-author{font-size:12px;}
+.gv-video-foot .gv-avatar{width:24px;height:24px;font-size:11px;}
+
+/* ---------- 专题 ---------- */
+.gv-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.gv-topic{
+  position:relative;border-radius:var(--gv-radius);overflow:hidden;
+  border:1px solid var(--gv-line);background:var(--gv-card);
+  transition:.28s;display:flex;flex-direction:column;
+}
+.gv-topic:first-child{grid-column:span 1;}
+.gv-topic:hover{transform:translateY(-4px);border-color:#3a4c6e;}
+.gv-topic-cover{position:relative;aspect-ratio:16/9;overflow:hidden;}
+.gv-topic-cover svg{width:100%;height:100%;display:block;}
+.gv-topic-status{
+  position:absolute;top:12px;right:12px;z-index:2;
+  font-size:11.5px;padding:2px 9px;border-radius:12px;
+  background:rgba(5,9,15,.75);border:1px solid rgba(255,255,255,.2);color:#dfe7f3;
+}
+.gv-topic-body{padding:18px 19px 20px;flex:1;display:flex;flex-direction:column;}
+.gv-topic-body h3{font-size:17px;margin-bottom:9px;letter-spacing:.4px;}
+.gv-topic-body p{font-size:13px;color:var(--gv-muted);flex:1;margin-bottom:14px;}
+.gv-topic-foot{display:flex;align-items:center;justify-content:space-between;font-size:12.5px;color:#8e9cb4;}
+.gv-topic-bar{
+  height:4px;border-radius:3px;background:var(--gv-line);overflow:hidden;width:96px;
+}
+.gv-topic-bar i{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,var(--gv-red),var(--gv-gold));}
+
+/* ---------- 创作者矩阵 ---------- */
+.gv-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.gv-creator{
+  background:var(--gv-card);border:1px solid var(--gv-line);
+  border-radius:var(--gv-radius);padding:24px 20px 20px;text-align:center;
+  transition:.28s;position:relative;overflow:hidden;
+}
+.gv-creator::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:3px;
+  background:linear-gradient(90deg,var(--gv-red),transparent);
+  opacity:0;transition:.28s;
+}
+.gv-creator:hover{transform:translateY(-5px);border-color:#3a4c6e;}
+.gv-creator:hover::before{opacity:1;}
+.gv-creator .gv-avatar{
+  width:64px;height:64px;font-size:23px;margin:0 auto 14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.4);
+}
+.gv-creator h3{font-size:16px;margin-bottom:5px;}
+.gv-creator .gv-creator-field{
+  font-size:11.5px;color:var(--gv-gold);letter-spacing:1px;margin-bottom:11px;
+}
+.gv-creator p{font-size:12.5px;color:var(--gv-muted);line-height:1.65;margin-bottom:15px;min-height:60px;}
+.gv-creator-nums{
+  display:flex;justify-content:center;gap:18px;font-size:11.5px;color:#8e9cb4;
+  padding-top:13px;border-top:1px dashed var(--gv-line);
+}
+.gv-creator-nums b{display:block;color:#e2e9f4;font-size:14px;font-weight:700;}
+
+/* ---------- 影像墙 ---------- */
+.gv-wall{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  grid-auto-rows:112px;
+  gap:14px;
+}
+.gv-wall-item{
+  position:relative;border-radius:11px;overflow:hidden;
+  border:1px solid var(--gv-line);transition:.3s;
+}
+.gv-wall-item svg{width:100%;height:100%;display:block;object-fit:cover;transition:transform .45s;}
+.gv-wall-item:hover svg{transform:scale(1.07);}
+.gv-wall-item span{
+  position:absolute;left:0;right:0;bottom:0;
+  font-size:11.5px;padding:20px 11px 9px;color:#e6edf7;
+  background:linear-gradient(transparent,rgba(4,8,14,.9));
+  line-height:1.4;
+}
+.gv-wall-item.gv-w-a{grid-column:span 2;grid-row:span 2;}
+.gv-wall-item.gv-w-b{grid-column:span 2;grid-row:span 1;}
+.gv-wall-item.gv-w-c{grid-column:span 2;grid-row:span 2;}
+.gv-wall-item.gv-w-d{grid-column:span 2;grid-row:span 1;}
+.gv-wall-item.gv-w-e{grid-column:span 3;grid-row:span 1;}
+.gv-wall-item.gv-w-f{grid-column:span 3;grid-row:span 2;}
+.gv-wall-item.gv-w-g{grid-column:span 3;grid-row:span 1;}
+
+/* ---------- 用户评价 ---------- */
+.gv-comment-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+}
+.gv-comment{
+  background:var(--gv-card);border:1px solid var(--gv-line);
+  border-radius:var(--gv-radius);padding:20px 21px;transition:.26s;
+  display:flex;flex-direction:column;gap:12px;
+}
+.gv-comment:nth-child(2){background:var(--gv-card2);}
+.gv-comment:hover{border-color:#3a4c6e;transform:translateY(-3px);}
+.gv-comment-head{display:flex;align-items:center;gap:10px;}
+.gv-comment-head .gv-avatar{width:34px;height:34px;font-size:13px;}
+.gv-comment-head strong{font-size:13.5px;display:block;}
+.gv-comment-head small{font-size:11px;color:#7e8ca4;}
+.gv-comment p{font-size:13px;color:#b8c4d6;line-height:1.75;}
+.gv-comment-foot{font-size:11.5px;color:#7e8ca4;display:flex;gap:12px;margin-top:auto;}
+
+/* ---------- 深度解析 ---------- */
+.gv-about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.gv-about-copy p{font-size:14px;color:#b5c1d4;margin-bottom:18px;line-height:1.9;}
+.gv-about-copy p b{color:#e5ecf6;font-weight:600;}
+.gv-about-copy h3{font-size:18px;margin:26px 0 12px;letter-spacing:.5px;}
+.gv-about-quote{
+  border-left:3px solid var(--gv-gold);
+  background:rgba(242,179,61,.06);
+  padding:16px 20px;border-radius:0 10px 10px 0;
+  font-size:13.5px;color:#cfd9e8;margin:24px 0;
+}
+.gv-about-side{display:flex;flex-direction:column;gap:16px;}
+.gv-about-card{
+  background:var(--gv-card);border:1px solid var(--gv-line);
+  border-radius:12px;padding:20px 22px;transition:.26s;
+}
+.gv-about-card:hover{border-color:#3a4c6e;}
+.gv-about-card h4{font-size:15px;margin-bottom:8px;display:flex;align-items:center;gap:9px;}
+.gv-about-card h4 i{
+  width:24px;height:24px;border-radius:7px;background:rgba(230,57,70,.16);
+  display:flex;align-items:center;justify-content:center;font-style:normal;
+  font-size:12px;color:var(--gv-red2);flex:none;
+}
+.gv-about-card p{font-size:13px;color:var(--gv-muted);line-height:1.75;}
+
+/* ---------- 企业动态 ---------- */
+.gv-news-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+.gv-news-item{
+  display:flex;gap:18px;align-items:flex-start;
+  background:var(--gv-card);border:1px solid var(--gv-line);
+  border-radius:12px;padding:20px 22px;transition:.26s;
+}
+.gv-news-item:hover{border-color:#3a4c6e;transform:translateX(4px);}
+.gv-news-date{
+  flex:none;text-align:center;background:var(--gv-card2);
+  border:1px solid var(--gv-line);border-radius:9px;
+  padding:8px 12px;min-width:60px;
+}
+.gv-news-date b{display:block;font-size:19px;color:var(--gv-red2);line-height:1.1;}
+.gv-news-date span{font-size:11px;color:#7e8ca4;}
+.gv-news-item h3{font-size:15px;margin-bottom:6px;}
+.gv-news-item p{font-size:12.5px;color:var(--gv-muted);}
+
+/* ---------- FAQ ---------- */
+.gv-faq{max-width:880px;margin:0 auto;}
+.gv-faq details{
+  background:var(--gv-card);border:1px solid var(--gv-line);
+  border-radius:11px;margin-bottom:12px;overflow:hidden;transition:.24s;
+}
+.gv-faq details[open]{border-color:rgba(230,57,70,.45);background:var(--gv-card2);}
+.gv-faq summary{
+  cursor:pointer;padding:17px 22px;font-size:14.5px;font-weight:500;
+  list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.gv-faq summary::-webkit-details-marker{display:none;}
+.gv-faq summary::after{
+  content:"+";font-size:19px;color:var(--gv-red2);transition:.25s;flex:none;line-height:1;
+}
+.gv-faq details[open] summary::after{transform:rotate(45deg);}
+.gv-faq details p{
+  padding:0 22px 18px;font-size:13.5px;color:var(--gv-muted);line-height:1.85;
+}
+
+/* ---------- 联系 ---------- */
+.gv-contact{
+  background:
+    radial-gradient(600px 280px at 88% 10%,rgba(230,57,70,.16),transparent 70%),
+    var(--gv-bg2);
+  border-top:1px solid var(--gv-line);
+  border-bottom:1px solid var(--gv-line);
+}
+.gv-contact-inner{
+  display:grid;grid-template-columns:1.2fr 1fr;gap:44px;align-items:center;
+}
+.gv-contact h2{font-size:29px;margin-bottom:14px;letter-spacing:.5px;line-height:1.35;}
+.gv-contact p{font-size:14px;color:var(--gv-muted);margin-bottom:22px;max-width:480px;}
+.gv-contact-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.gv-contact-info{display:flex;flex-direction:column;gap:14px;}
+.gv-contact-info div{
+  background:var(--gv-card);border:1px solid var(--gv-line);
+  border-radius:11px;padding:15px 18px;font-size:13px;color:var(--gv-muted);
+  display:flex;gap:12px;align-items:center;
+}
+.gv-contact-info div i{
+  flex:none;width:32px;height:32px;border-radius:9px;
+  background:rgba(78,197,214,.12);color:var(--gv-cyan);
+  display:flex;align-items:center;justify-content:center;font-style:normal;font-size:13px;
+}
+.gv-contact-info b{color:#dbe4f1;display:block;font-size:13.5px;margin-bottom:1px;font-weight:600;}
+
+/* ---------- 页脚 ---------- */
+.gv-footer{background:#0a0f18;padding:52px 0 26px;border-top:1px solid var(--gv-line);}
+.gv-footer-top{
+  display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;margin-bottom:38px;
+}
+.gv-footer-brand p{font-size:12.5px;color:var(--gv-muted);margin-top:14px;line-height:1.85;max-width:290px;}
+.gv-footer-col h4{font-size:13.5px;margin-bottom:14px;color:#dbe4f1;letter-spacing:1px;}
+.gv-footer-col li{margin-bottom:9px;}
+.gv-footer-col a{font-size:12.5px;color:#8492a8;transition:.2s;}
+.gv-footer-col a:hover{color:var(--gv-red2);}
+.gv-footer-bottom{
+  border-top:1px solid var(--gv-line);padding-top:20px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:12px;color:#6a788e;
+}
+.gv-footer-bottom a{color:#8492a8;}
+.gv-footer-bottom a:hover{color:var(--gv-red2);}
+
+/* ---------- 回顶/弹窗/Toast ---------- */
+.gv-top-btn{
+  position:fixed;right:26px;bottom:28px;z-index:70;
+  width:46px;height:46px;border-radius:50%;
+  background:var(--gv-card2);border:1px solid var(--gv-line);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transform:translateY(10px);
+  transition:.28s;box-shadow:0 8px 22px rgba(0,0,0,.45);
+}
+.gv-top-btn.gv-show{opacity:1;pointer-events:auto;transform:translateY(0);}
+.gv-top-btn:hover{border-color:var(--gv-red);color:var(--gv-red2);}
+.gv-top-btn svg{width:18px;height:18px;}
+
+.gv-modal{
+  position:fixed;inset:0;z-index:90;
+  background:rgba(4,8,14,.78);
+  display:flex;align-items:center;justify-content:center;padding:24px;
+  opacity:0;pointer-events:none;transition:.26s;
+}
+.gv-modal.gv-show{opacity:1;pointer-events:auto;}
+.gv-modal-box{
+  background:var(--gv-bg2);border:1px solid var(--gv-line);
+  border-radius:16px;width:100%;max-width:520px;
+  padding:28px 28px 24px;position:relative;
+  box-shadow:0 30px 80px rgba(0,0,0,.6);
+  transform:translateY(14px);transition:.28s;
+  max-height:86vh;overflow:auto;
+}
+.gv-modal.gv-show .gv-modal-box{transform:translateY(0);}
+.gv-modal-box h3{font-size:19px;margin-bottom:8px;}
+.gv-modal-box .gv-modal-sub{font-size:13px;color:var(--gv-muted);margin-bottom:20px;}
+.gv-modal-close{
+  position:absolute;right:16px;top:14px;width:32px;height:32px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;color:#8e9cb4;
+  transition:.2s;font-size:19px;line-height:1;
+}
+.gv-modal-close:hover{background:var(--gv-card2);color:var(--gv-text);}
+.gv-field{margin-bottom:15px;}
+.gv-field label{display:block;font-size:12.5px;color:#a9b6c9;margin-bottom:7px;}
+.gv-field input,.gv-field textarea,.gv-field select{
+  width:100%;background:var(--gv-card);border:1px solid var(--gv-line);
+  border-radius:9px;padding:10px 13px;color:var(--gv-text);
+  font-size:13.5px;font-family:inherit;outline:none;transition:.22s;
+}
+.gv-field textarea{resize:vertical;min-height:88px;}
+.gv-field input:focus,.gv-field textarea:focus,.gv-field select:focus{border-color:var(--gv-red);}
+.gv-share-list{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:6px;}
+.gv-share-item{
+  background:var(--gv-card);border:1px solid var(--gv-line);
+  border-radius:11px;padding:16px 8px;text-align:center;
+  font-size:12px;color:#c3cee0;transition:.22s;
+}
+.gv-share-item:hover{border-color:var(--gv-cyan);color:var(--gv-cyan);transform:translateY(-3px);}
+.gv-share-item i{display:block;font-size:18px;font-style:normal;margin-bottom:6px;}
+.gv-toast{
+  position:fixed;left:50%;bottom:44px;transform:translate(-50%,16px);
+  background:#26344c;border:1px solid #3a4c6e;color:#e8edf5;
+  font-size:13.5px;padding:11px 22px;border-radius:24px;
+  opacity:0;pointer-events:none;transition:.28s;z-index:120;
+  box-shadow:0 14px 36px rgba(0,0,0,.5);white-space:nowrap;
+}
+.gv-toast.gv-show{opacity:1;transform:translate(-50%,0);}
+
+/* ---------- 响应式 ---------- */
+@media(max-width:1024px){
+  .gv-hero h1{font-size:42px;}
+  .gv-focus-grid{grid-template-columns:1fr;}
+  .gv-focus-side{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .gv-video-grid{grid-template-columns:repeat(2,1fr);}
+  .gv-topic-grid{grid-template-columns:1fr 1fr;}
+  .gv-creator-grid{grid-template-columns:repeat(2,1fr);}
+  .gv-comment-grid{grid-template-columns:1fr 1fr;}
+  .gv-about-grid{grid-template-columns:1fr;gap:32px;}
+  .gv-footer-top{grid-template-columns:1fr 1fr;}
+  .gv-contact-inner{grid-template-columns:1fr;}
+  .gv-wall{grid-template-columns:repeat(4,1fr);grid-auto-rows:104px;}
+  .gv-wall-item.gv-w-a,.gv-wall-item.gv-w-c{grid-column:span 2;grid-row:span 2;}
+  .gv-wall-item.gv-w-f{grid-column:span 2;grid-row:span 2;}
+  .gv-wall-item.gv-w-e{grid-column:span 2;}
+  .gv-wall-item.gv-w-g{grid-column:span 2;}
+}
+@media(max-width:820px){
+  html{scroll-padding-top:112px;}
+  .gv-nav{
+    position:absolute;left:0;right:0;top:100%;
+    background:rgba(14,20,32,.985);border-bottom:1px solid var(--gv-line);
+    flex-direction:column;padding:12px 18px 18px;gap:4px;
+    display:none;
+  }
+  .gv-nav.gv-open{display:flex;}
+  .gv-nav a{padding:11px 14px;font-size:15px;}
+  .gv-burger{display:flex;}
+  .gv-header-inner{gap:14px;height:68px;}
+  .gv-search{width:150px;}
+  .gv-btn-outline{display:none;}
+  .gv-hero{padding:44px 0 54px;}
+  .gv-hero-inner{grid-template-columns:1fr;gap:38px;}
+  .gv-hero h1{font-size:36px;}
+  .gv-hero-float{right:6px;bottom:-14px;}
+  .gv-section{padding:54px 0;}
+  .gv-sec-title{font-size:25px;}
+}
+@media(max-width:640px){
+  .gv-container{padding:0 18px;}
+  .gv-notice-inner{padding:8px 18px;}
+  .gv-notice-list{gap:24px;font-size:12.5px;}
+  .gv-search{width:118px;padding:6px 11px;}
+  .gv-header-tools{gap:8px;}
+  .gv-hero h1{font-size:30px;letter-spacing:1px;}
+  .gv-hero-lead{font-size:14.5px;}
+  .gv-hero-stats{gap:24px;}
+  .gv-hero-stats li strong{font-size:23px;}
+  .gv-focus-side{grid-template-columns:1fr;}
+  .gv-video-grid{grid-template-columns:1fr;}
+  .gv-topic-grid{grid-template-columns:1fr;}
+  .gv-creator-grid{grid-template-columns:1fr;}
+  .gv-comment-grid{grid-template-columns:1fr;}
+  .gv-news-grid{grid-template-columns:1fr;}
+  .gv-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:96px;}
+  .gv-wall-item.gv-w-a,.gv-wall-item.gv-w-c{grid-column:span 2;grid-row:span 2;}
+  .gv-wall-item.gv-w-f{grid-column:span 2;grid-row:span 1;}
+  .gv-wall-item.gv-w-e,.gv-wall-item.gv-w-g{grid-column:span 2;}
+  .gv-footer-top{grid-template-columns:1fr 1fr;gap:26px;}
+  .gv-sec-head{flex-direction:column;align-items:flex-start;gap:12px;}
+  .gv-modal-box{padding:24px 20px 20px;}
+  .gv-share-list{grid-template-columns:repeat(2,1fr);}
+  .gv-top-btn{right:16px;bottom:18px;width:42px;height:42px;}
+  .gv-search-feedback{right:18px;left:18px;max-width:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 -->
+<div class="gv-notice" id="gv-notice">
+  <div class="gv-notice-inner">
+    <span class="gv-notice-tag">最新</span>
+    <ul class="gv-notice-list">
+      <li><b>11-18</b> 「全球光影·冬季片单」专题新增 12 部国际佳作解说</li>
+      <li><b>11-16</b> 影像创作挑战赛第三季开放报名，主题「跨文化叙事」</li>
+      <li><b>11-14</b> 品牌官网创作者中心上线高清素材下载权益</li>
+      <li><b>11-11</b> 「幕后解码」企划更新：国际合拍片的声音设计</li>
+      <li><b>11-18</b> 「全球光影·冬季片单」专题新增 12 部国际佳作解说</li>
+      <li><b>11-16</b> 影像创作挑战赛第三季开放报名，主题「跨文化叙事」</li>
+      <li><b>11-14</b> 品牌官网创作者中心上线高清素材下载权益</li>
+      <li><b>11-11</b> 「幕后解码」企划更新：国际合拍片的声音设计</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="gv-header" id="gv-top">
+  <div class="gv-header-inner">
+    <a class="gv-logo" href="#gv-top" aria-label="光影视界官网首页">
+      <span class="gv-logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 4l13 8-13 8z" fill="#fff"/></svg>
+      </span>
+      <span class="gv-logo-text">
+        <strong>光影视界</strong>
+        <span>GUANGYING VISION</span>
+      </span>
+    </a>
+    <nav class="gv-nav" id="gv-nav" aria-label="主导航">
+      <a href="#gv-top" class="gv-active">首页</a>
+      <a href="#gv-focus">焦点影像</a>
+      <a href="#gv-topics">专题企划</a>
+      <a href="#gv-creators">创作者</a>
+      <a href="#gv-news">企业动态</a>
+      <a href="#gv-faq">帮助中心</a>
+      <a href="#gv-contact">联系我们</a>
+    </nav>
+    <div class="gv-header-tools">
+      <div class="gv-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        <input type="search" id="gv-search-input" placeholder="搜索作品 / 创作者" aria-label="站内搜索">
+      </div>
+      <button class="gv-btn-outline" type="button" data-gv-modal="submit">投稿入口</button>
+      <button class="gv-burger" id="gv-burger" type="button" aria-label="展开导航" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="gv-search-feedback" id="gv-search-feedback" role="status" aria-live="polite"></div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="gv-hero" aria-labelledby="gv-h1">
+  <div class="gv-container gv-hero-inner">
+    <div>
+      <div class="gv-hero-badge"><i></i>国际大片官方影像门户 · 持续运营中</div>
+      <h1 id="gv-h1">国际大片</h1>
+      <p class="gv-hero-lead">以专业的视角解读全球佳片，用真实的影像连接每一位热爱故事的人。这里是国际大片领域的品牌官方网站，也是创作者与企业共建的高品质内容生态。</p>
+      <p class="gv-hero-intro">光影视界自 2017 年创立以来，深耕国际大片垂直领域，围绕<b>深度解析、幕后故事、创作者访谈</b>与<b>行业观察</b>持续产出原创精品内容。平台汇聚来自全球的影像爱好者、影评人与独立导演，以正版高清素材与严谨的编审流程，为每一位用户提供值得信赖的观看与交流体验。</p>
+      <div class="gv-hero-actions">
+        <a href="#gv-focus" class="gv-btn-primary">
+          探索本期焦点
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="gv-btn-ghost" type="button" data-gv-modal="submit">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3"/></svg>
+          上传我的作品
+        </button>
+      </div>
+      <ul class="gv-hero-stats">
+        <li><strong data-gv-count="12800">0<i>+</i></strong><span>原创影像作品</span></li>
+        <li><strong data-gv-count="326">0<i>万</i></strong><span>注册社区用户</span></li>
+        <li><strong data-gv-count="186">0<i>位</i></strong><span>签约创作者</span></li>
+      </ul>
+    </div>
+    <div class="gv-hero-visual">
+      <div class="gv-hero-frame">
+        <svg viewBox="0 0 800 500" role="img" aria-label="国际大片冬季片单主视觉：城市夜景与电影光束">
+          <defs>
+            <linearGradient id="gvHeroSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#0b1524"/><stop offset="1" stop-color="#1c2f4c"/>
+            </linearGradient>
+            <linearGradient id="gvHeroBeam" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e63946" stop-opacity=".85"/><stop offset="1" stop-color="#f2b33d" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="gvHeroGlow" cx="72%" cy="28%" r="52%">
+              <stop offset="0" stop-color="#f2b33d" stop-opacity=".42"/><stop offset="1" stop-color="#f2b33d" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="800" height="500" fill="url(#gvHeroSky)"/>
+          <rect width="800" height="500" fill="url(#gvHeroGlow)"/>
+          <path d="M80 500 L330 90 L470 90 L640 500 Z" fill="url(#gvHeroBeam)" opacity=".55"/>
+          <circle cx="400" cy="120" r="66" fill="#f2b33d" opacity=".16"/>
+          <circle cx="400" cy="120" r="40" fill="#ffd98a" opacity=".5"/>
+          <g fill="#0e1c2e">
+            <rect x="0" y="330" width="120" height="170"/><rect x="130" y="290" width="88" height="210"/>
+            <rect x="640" y="300" width="96" height="200"/><rect x="748" y="350" width="52" height="150"/>
+            <rect x="228" y="356" width="70" height="144"/><rect x="560" y="270" width="66" height="230"/>
+          </g>
+          <g fill="#2f4a6d" opacity=".9">
+            <rect x="18" y="352" width="12" height="16"/><rect x="48" y="352" width="12" height="16"/><rect x="78" y="352" width="12" height="16"/>
+            <rect x="18" y="386" width="12" height="16"/><rect x="48" y="386" width="12" height="16"/>
+            <rect x="142" y="312" width="12" height="14"/><rect x="170" y="312" width="12" height="14"/><rect x="142" y="344" width="12" height="14"/>
+            <rect x="662" y="322" width="12" height="14"/><rect x="690" y="322" width="12" height="14"/><rect x="662" y="354" width="12" height="14"/>
+            <rect x="574" y="292" width="11" height="13"/><rect x="598" y="292" width="11" height="13"/>
+          </g>
+          <path d="M0 500 Q200 440 400 470 T800 452 V500 Z" fill="#070d16"/>
+          <g stroke="#4ec5d6" stroke-width="2" opacity=".5" fill="none">
+            <path d="M60 210 L170 130"/><path d="M740 200 L632 128"/>
+          </g>
+        </svg>
+        <div class="gv-cover-label"><span class="gv-tag">冬季片单</span></div>
+        <div class="gv-hero-play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5l12 7-12 7z"/></svg>
+        </div>
+        <div class="gv-hero-frame-meta">
+          <div>
+            <h3>《远洋来信》—— 跨越大洲的六段影像手记</h3>
+            <p>深度解析 · 42 分钟 · 光影视界原创出品</p>
+          </div>
+          <span class="gv-tag gv-tag-gold">编辑推荐</span>
+        </div>
+      </div>
+      <div class="gv-hero-float">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ec5d6" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M3 12h18"/></svg>
+        本周新增 <b>48</b> 部高清作品
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 焦点影像 -->
+<section class="gv-section" id="gv-focus" aria-labelledby="gv-focus-title">
+  <div class="gv-container">
+    <div class="gv-sec-head">
+      <div>
+        <div class="gv-sec-eyebrow">FOCUS · 焦点影像</div>
+        <h2 class="gv-sec-title" id="gv-focus-title">本期焦点推荐
+          <small>由编辑团队从国际大片内容生态中甄选的深度作品与专题解读</small>
+        </h2>
+      </div>
+      <a href="#gv-stream" class="gv-sec-link">查看全部焦点 →</a>
+    </div>
+    <div class="gv-focus-grid">
+      <article class="gv-focus-main">
+        <div class="gv-cover">
+          <svg viewBox="0 0 800 450" role="img" aria-label="焦点作品《远洋来信》封面：海面与远航船只">
+            <defs>
+              <linearGradient id="gvF1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#173049"/><stop offset="1" stop-color="#0b1a2b"/></linearGradient>
+              <linearGradient id="gvF1s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e5c78"/><stop offset="1" stop-color="#102438"/></linearGradient>
+            </defs>
+            <rect width="800" height="450" fill="url(#gvF1)"/>
+            <circle cx="620" cy="110" r="52" fill="#f2b33d" opacity=".82"/>
+            <circle cx="620" cy="110" r="88" fill="#f2b33d" opacity=".12"/>
+            <path d="M0 300 Q140 268 300 296 T800 284 V450 H0 Z" fill="url(#gvF1s)"/>
+            <path d="M0 342 Q180 316 360 340 T800 330 V450 H0 Z" fill="#0d1f31"/>
+            <g fill="#e8edf5" opacity=".9">
+              <path d="M330 300 l46 0 l-9 26 l-28 0 z"/>
+              <path d="M354 300 l0 -58 l34 50 z" opacity=".85"/>
+            </g>
+            <g stroke="#8fb6cc" stroke-width="2" opacity=".4"><path d="M60 350h110"/><path d="M520 386h150"/></g>
+          </svg>
+          <span class="gv-cover-label"><span class="gv-tag">编辑首选</span></span>
+          <span class="gv-cover-dur">42:16</span>
+          <span class="gv-cover-tri" data-gv-modal="share"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5l12 7-12 7z"/></svg></span>
+        </div>
+        <div class="gv-focus-body">
+          <h3>《远洋来信》：六个港口，六段被镜头留住的普通人生</h3>
+          <p>国际大片栏目组历时十一个月，跟随一艘远洋货轮穿越三大洲，记录下船员、码头工人与港口小城居民的日常片段，并邀请两位影评人从叙事结构与影像语言角度进行深度拆解。</p>
+          <div class="gv-meta-row">
+            <div class="gv-author">
+              <span class="gv-avatar" style="background:linear-gradient(135deg,#e63946,#8e1c26)">沈</span>
+              沈舟工作室
+            </div>
+            <div class="gv-stats">
+              <span>12.8万 播放</span><span>3,204 收藏</span>
+            </div>
+          </div>
+          <div class="gv-meta-row" style="margin-top:12px">
+            <div style="display:flex;gap:6px;flex-wrap:wrap">
+              <button class="gv-act" type="button" data-gv-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.5-9 9-9 9z"/></svg><span data-gv-num="3204">3204</span></button>
+              <button class="gv-act" type="button" data-gv-modal="share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>分享</button>
+              <button class="gv-act" type="button" data-gv-modal="report"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4a1 1 0 011-1h11l-2 4 2 4H5"/></svg>反馈</button>
+            </div>
+            <a href="#gv-stream" class="gv-sec-link" style="border:none">作品详情 →</a>
+          </div>
+        </div>
+      </article>
+      <div class="gv-focus-side">
+        <article class="gv-focus-card">
+          <div class="gv-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="焦点作品《雨夜调度室》封面：霓虹雨夜街景">
+              <defs><linearGradient id="gvF2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#221a34"/><stop offset="1" stop-color="#0d1424"/></linearGradient></defs>
+              <rect width="480" height="270" fill="url(#gvF2)"/>
+              <g fill="#151f33"><rect x="20" y="90" width="70" height="180"/><rect x="100" y="60" width="56" height="210"/><rect x="330" y="80" width="64" height="190"/><rect x="404" y="120" width="56" height="150"/></g>
+              <g fill="#e63946" opacity=".7"><rect x="34" y="112" width="10" height="20"/><rect x="34" y="152" width="10" height="20"/><rect x="344" y="104" width="10" height="18"/></g>
+              <g fill="#4ec5d6" opacity=".55"><rect x="112" y="84" width="9" height="16"/><rect x="136" y="84" width="9" height="16"/><rect x="418" y="144" width="9" height="16"/></g>
+              <path d="M0 226 Q120 210 240 222 T480 214 V270 H0 Z" fill="#0a121e"/>
+              <g stroke="#f2b33d" stroke-width="2" opacity=".55"><path d="M60 270 L110 214"/><path d="M300 270 L268 216"/></g>
+            </svg>
+            <span class="gv-cover-label"><span class="gv-tag gv-tag-cyan">深度测评</span></span>
+            <span class="gv-cover-dur">18:42</span>
+            <span class="gv-cover-tri" data-gv-modal="share"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5l12 7-12 7z"/></svg></span>
+          </div>
+          <div class="gv-focus-body">
+            <h3>雨夜调度室：一部国际合拍片的灯光逻辑</h3>
+            <p>从布光草图到成片画面，逐帧还原夜景戏的创作路径。</p>
+            <div class="gv-meta-row">
+              <div class="gv-author"><span class="gv-avatar" style="background:linear-gradient(135deg,#4ec5d6,#1e6d7e)">林</span>林栖影像</div>
+              <button class="gv-act" type="button" data-gv-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.5-9 9-9 9z"/></svg><span data-gv-num="1866">1866</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="gv-focus-card">
+          <div class="gv-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="焦点作品《字幕之外》封面：胶片与文字排列">
+              <defs><linearGradient id="gvF3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a2a18"/><stop offset="1" stop-color="#171018"/></linearGradient></defs>
+              <rect width="480" height="270" fill="url(#gvF3)"/>
+              <g opacity=".9">
+                <rect x="40" y="56" width="150" height="18" rx="4" fill="#f2b33d" opacity=".65"/>
+                <rect x="40" y="88" width="230" height="10" rx="4" fill="#e8edf5" opacity=".35"/>
+                <rect x="40" y="110" width="190" height="10" rx="4" fill="#e8edf5" opacity=".25"/>
+                <rect x="40" y="132" width="260" height="10" rx="4" fill="#e8edf5" opacity=".25"/>
+              </g>
+              <g fill="#0e0c10" stroke="#4a3a26" stroke-width="2">
+                <rect x="320" y="46" width="120" height="150" rx="8"/>
+                <circle cx="352" cy="74" r="12" fill="#4a3a26"/><circle cx="406" cy="74" r="12" fill="#4a3a26"/>
+                <circle cx="352" cy="166" r="12" fill="#4a3a26"/><circle cx="406" cy="166" r="12" fill="#4a3a26"/>
+              </g>
+              <g fill="#e63946" opacity=".75"><rect x="40" y="200" width="72" height="24" rx="6"/></g>
+            </svg>
+            <span class="gv-cover-label"><span class="gv-tag gv-tag-gold">人物访谈</span></span>
+            <span class="gv-cover-dur">26:05</span>
+            <span class="gv-cover-tri" data-gv-modal="share"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5l12 7-12 7z"/></svg></span>
+          </div>
+          <div class="gv-focus-body">
+            <h3>字幕之外：三位译制工作者的跨国叙事现场</h3>
+            <p>当语言成为桥梁，译制者如何让情绪在另一种语境里落地。</p>
+            <div class="gv-meta-row">
+              <div class="gv-author"><span class="gv-avatar" style="background:linear-gradient(135deg,#f2b33d,#a5711a)">白</span>白鹿访谈</div>
+              <button class="gv-act" type="button" data-gv-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.5-9 9-9 9z"/></svg><span data-gv-num="2410">2410</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 热门视频流 -->
+<section class="gv-section gv-alt" id="gv-stream" aria-labelledby="gv-stream-title">
+  <div class="gv-container">
+    <div class="gv-sec-head">
+      <div>
+        <div class="gv-sec-eyebrow">STREAM · 内容流</div>
+        <h2 class="gv-sec-title" id="gv-stream-title">社区热门影像
+          <small>来自国际大片社区的原创精品内容，每日持续更新</small>
+        </h2>
+      </div>
+      <a href="#gv-topics" class="gv-sec-link">浏览全部精品内容 →</a>
+    </div>
+    <div class="gv-video-grid">
+
+      <article class="gv-video-card">
+        <div class="gv-cover">
+          <svg viewBox="0 0 480 270" role="img" aria-label="视频《长镜头里的地铁站》封面：地铁站台光影">
+            <defs><linearGradient id="gvV1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#193247"/><stop offset="1" stop-color="#0a1624"/></linearGradient></defs>
+            <rect width="480" height="270" fill="url(#gvV1)"/>
+            <path d="M150 0 L330 0 L400 270 L80 270 Z" fill="#122c40"/>
+            <g stroke="#4ec5d6" stroke-width="3" opacity=".5"><path d="M180 20 L150 270"/><path d="M300 20 L330 270"/></g>
+            <g fill="#e8edf5" opacity=".85"><ellipse cx="240" cy="196" rx="20" ry="34"/><circle cx="240" cy="146" r="12"/></g>
+            <g fill="#f2b33d" opacity=".8"><circle cx="112" cy="70" r="7"/><circle cx="368" cy="70" r="7"/></g>
+          </svg>
+          <span class="gv-cover-label"><span class="gv-tag">城市探索</span></span>
+          <span class="gv-cover-dur">14:20</span>
+          <span class="gv-cover-tri"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5l12 7-12 7z"/></svg></span>
+        </div>
+        <div class="gv-video-body">
+          <h3>长镜头里的地铁站：一座城市的清晨叙事</h3>
+          <p>用一个 8 分钟不剪断的长镜头，记录国际大都市早高峰流动的人群。</p>
+          <div class="gv-tags"><span>城市探索</span><span>长镜头</span><span>纪实</span></div>
+          <div class="gv-video-foot">
+            <div class="gv-author"><span class="gv-avatar" style="background:linear-gradient(135deg,#4ec5d6,#1e6d7e)">林</span>林栖影像</div>
+            <button class="gv-act" type="button" data-gv-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.5-9 9-9 9z"/></svg><span data-gv-num="4210">4210</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="gv-video-card">
+        <div class="gv-cover">
+          <svg viewBox="0 0 480 270" role="img" aria-label="视频《剪辑台上的三小时》封面：时间轴与刻度">
+            <defs><linearGradient id="gvV2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2038"/><stop offset="1" stop-color="#12101c"/></linearGradient></defs>
+            <rect width="480" height="270" fill="url(#gvV2)"/>
+            <g stroke="#4a3d63" stroke-width="1"><path d="M0 60h480M0 110h480M0 160h480M0 210h480"/></g>
+            <g fill="#e63946" opacity=".8"><rect x="60" y="66" width="96" height="34" rx="5"/></g>
+            <g fill="#4ec5d6" opacity=".7"><rect x="172" y="116" width="130" height="34" rx="5"/></g>
+            <g fill="#f2b33d" opacity=".7"><rect x="316" y="166" width="104" height="34" rx="5"/></g>
+            <path d="M240 40 V230" stroke="#fff" stroke-width="2" opacity=".55"/>
+          </svg>
+          <span class="gv-cover-label"><span class="gv-tag gv-tag-gold">教程干货</span></span>
+          <span class="gv-cover-dur">22:48</span>
+          <span class="gv-cover-tri"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5l12 7-12 7z"/></svg></span>
+        </div>
+        <div class="gv-video-body">
+          <h3>剪辑台上的三小时：把素材整理成叙事节奏</h3>
+          <p>从粗剪、卡点到配乐铺陈，完整还原一支 3 分钟短片节奏构建。</p>
+          <div class="gv-tags"><span>教程</span><span>剪辑思维</span><span>节奏</span></div>
+          <div class="gv-video-foot">
+            <div class="gv-author"><span class="gv-avatar" style="background:linear-gradient(135deg,#e63946,#8e1c26)">沈</span>沈舟工作室</div>
+            <button class="gv-act" type="button" data-gv-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.5-9 9-9 9z"/></svg><span data-gv-num="3876">3876</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="gv-video-card">
+        <div class="gv-cover">
+          <svg viewBox="0 0 480 270" role="img" aria-label="视频《海岸线以北》封面：海岸礁石与浪">
+            <defs><linearGradient id="gvV3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5aa8bd"/><stop offset="1" stop-color="#17384a"/></linearGradient></defs>
+            <rect width="480" height="270" fill="url(#gvV3)"/>
+            <path d="M0 170 Q90 150 180 168 T480 158 V270 H0 Z" fill="#12303f"/>
+            <path d="M0 200 Q120 182 250 200 T480 192 V270 H0 Z" fill="#0b2230"/>
+            <g fill="#8a9aa6"><path d="M60 200 l40 -46 l34 46 z"/><path d="M120 208 l26 -30 l22 30 z"/></g>
+            <circle cx="386" cy="62" r="26" fill="#fff3c4" opacity=".85"/>
+            <path d="M300 122 q30 -14 62 0" stroke="#fff" stroke-width="2.5" fill="none" opacity=".6"/>
+          </svg>
+          <span class="gv-cover-label"><span class="gv-tag gv-tag-cyan">旅行见闻</span></span>
+          <span class="gv-cover-dur">19:35</span>
+          <span class="gv-cover-tri"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5l12 7-12 7z"/></svg></span>
+        </div>
+        <div class="gv-video-body">
+          <h3>海岸线以北：沿着国际公路拍摄的七天见闻</h3>
+          <p>一台相机、一辆车，在北方海岸记录风、渔民与日出前的等待。</p>
+          <div class="gv-tags"><span>旅行</span><span>自然</span><span>影像手记</span></div>
+          <div class="gv-video-foot">
+            <div class="gv-author"><span class="gv-avatar" style="background:linear-gradient(135deg,#5aa8bd,#22697d)">顾</span>顾远行记</div>
+            <button class="gv-act" type="button" data-gv-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.5-9 9-9 9z"/></svg><span data-gv-num="2954">2954</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="gv-video-card">
+        <div class="gv-cover">
+          <svg viewBox="0 0 480 270" role="img" aria-label="视频《一位配音演员的二十七年》封面：录音棚话筒">
+            <defs><linearGradient id="gvV4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b1f2b"/><stop offset="1" stop-color="#170c12"/></linearGradient></defs>
+            <rect width="480" height="270" fill="url(#gvV4)"/>
+            <g fill="#5c3441"><rect x="0" y="190" width="480" height="80"/></g>
+            <g stroke="#f2b33d" stroke-width="3" fill="none"><path d="M240 60 v96"/><ellipse cx="240" cy="182" rx="30" ry="38"/></g>
+            <g fill="#e63946" opacity=".8"><circle cx="148" cy="96" r="9"/><circle cx="330" cy="118" r="6"/></g>
+            <g stroke="#e8edf5" stroke-width="2" opacity=".45"><path d="M60 74 q14 -18 28 0"/><path d="M396 150 q14 -18 28 0"/></g>
+          </svg>
+          <span class="gv-cover-label"><span class="gv-tag gv-tag-gold">人物访谈</span></span>
+          <span class="gv-cover-dur">31:02</span>
+          <span class="gv-cover-tri"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5l12 7-12 7z"/></svg></span>
+        </div>
+        <div class="gv-video-body">
+          <h3>一位配音演员的二十七年：声音如何塑造角色</h3>
+          <p>从译制片到原创动画，听一位资深配音演员讲述声音背后的功课。</p>
+          <div class="gv-tags"><span>人物</span><span>配音</span><span>幕后</span></div>
+          <div class="gv-video-foot">
+            <div class="gv-author"><span class="gv-avatar" style="background:linear-gradient(135deg,#f2b33d,#a5711a)">白</span>白鹿访谈</div>
+            <button class="gv-act" type="button" data-gv-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.5-9 9-9 9z"/></svg><span data-gv-num="5120">5120</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="gv-video-card">
+        <div class="gv-cover">
+          <svg viewBox="0 0 480 270" role="img" aria-label="视频《胶片颗粒的当代用途》封面：胶片条与光斑">
+            <defs><linearGradient id="gvV5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3c3320"/><stop offset="1" stop-color="#16130c"/></linearGradient></defs>
+            <rect width="480" height="270" fill="url(#gvV5)"/>
+            <g fill="#0d0b07" stroke="#6b5a36" stroke-width="2"><rect x="36" y="60" width="90" height="150" rx="7"/><rect x="146" y="60" width="90" height="150" rx="7"/><rect x="256" y="60" width="90" height="150" rx="7"/></g>
+            <g fill="#6b5a36"><circle cx="52" cy="80" r="6"/><circle cx="110" cy="80" r="6"/><circle cx="162" cy="80" r="6"/><circle cx="220" cy="80" r="6"/><circle cx="272" cy="80" r="6"/><circle cx="330" cy="80" r="6"/></g>
+            <g fill="#f2b33d" opacity=".65"><rect x="366" y="88" width="82" height="14" rx="4"/><rect x="366" y="118" width="60" height="10" rx="4"/><rect x="366" y="142" width="72" height="10" rx="4"/></g>
+          </svg>
+          <span class="gv-cover-label"><span class="gv-tag">深度测评</span></span>
+          <span class="gv-cover-dur">16:44</span>
+          <span class="gv-cover-tri"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5l12 7-12 7z"/></svg></span>
+        </div>
+        <div class="gv-video-body">
+          <h3>胶片颗粒的当代用途：数字时代的质感实验</h3>
+          <p>对比五种调色方案，聊聊颗粒如何为国际大片提供真实的质地。</p>
+          <div class="gv-tags"><span>调色</span><span>胶片</span><span>测评</span></div>
+          <div class="gv-video-foot">
+            <div class="gv-author"><span class="gv-avatar" style="background:linear-gradient(135deg,#8f7a4a,#4a3c1d)">陆</span>陆离调色间</div>
+            <button class="gv-act" type="button" data-gv-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.5-9 9-9 9z"/></svg><span data-gv-num="2340">2340</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="gv-video-card">
+        <div class="gv-cover">
+          <svg viewBox="0 0 480 270" role="img" aria-label="视频《小城的电影院》封面：影院座椅与幕布">
+            <defs><linearGradient id="gvV6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1c22"/><stop offset="1" stop-color="#100a0e"/></linearGradient></defs>
+            <rect width="480" height="270" fill="url(#gvV6)"/>
+            <rect x="76" y="34" width="328" height="130" rx="5" fill="#e8e2d2" opacity=".9"/>
+            <rect x="76" y="34" width="328" height="130" rx="5" fill="none" stroke="#5c3a3a" stroke-width="6"/>
+            <g fill="#4a2028"><rect x="46" y="196" width="80" height="60" rx="12"/><rect x="140" y="196" width="80" height="60" rx="12"/><rect x="234" y="196" width="80" height="60" rx="12"/><rect x="328" y="196" width="80" height="60" rx="12"/></g>
+            <circle cx="400" cy="86" r="16" fill="#f2b33d" opacity=".7"/>
+          </svg>
+          <span class="gv-cover-label"><span class="gv-tag gv-tag-cyan">情感故事</span></span>
+          <span class="gv-cover-dur">12:08</span>
+          <span class="gv-cover-tri"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5l12 7-12 7z"/></svg></span>
+        </div>
+        <div class="gv-video-body">
+          <h3>小城的电影院：一块银幕与三代人的记忆</h3>
+          <p>跟随小城唯一的影院经理，看一块老银幕如何在数字时代继续亮着。</p>
+          <div class="gv-tags"><span>故事</span><span>影院</span><span>在地文化</span></div>
+          <div class="gv-video-foot">
+            <div class="gv-author"><span class="gv-avatar" style="background:linear-gradient(135deg,#b76c54,#6d3324)">程</span>程叙记录</div>
+            <button class="gv-act" type="button" data-gv-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.5-9 9-9 9z"/></svg><span data-gv-num="3688">3688</span></button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 专题企划 -->
+<section class="gv-section" id="gv-topics" aria-labelledby="gv-topics-title">
+  <div class="gv-container">
+    <div class="gv-sec-head">
+      <div>
+        <div class="gv-sec-eyebrow">SERIES · 专题企划</div>
+        <h2 class="gv-sec-title" id="gv-topics-title">正在进行中的企划
+          <small>以专题形式系统梳理国际大片内容生态，持续更新中</small>
+        </h2>
+      </div>
+      <a href="#gv-news" class="gv-sec-link">查看企划排期 →</a>
+    </div>
+    <div class="gv-topic-grid">
+
+      <article class="gv-topic">
+        <div class="gv-topic-cover">
+          <svg viewBox="0 0 480 270" role="img" aria-label="专题《全球光影·冬季片单》封面：雪夜与光束">
+            <defs><linearGradient id="gvT1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#20344e"/><stop offset="1" stop-color="#0b1521"/></linearGradient></defs>
+            <rect width="480" height="270" fill="url(#gvT1)"/>
+            <g fill="#e8edf5" opacity=".8"><circle cx="70" cy="60" r="2.5"/><circle cx="130" cy="40" r="2"/><circle cx="320" cy="52" r="2.5"/><circle cx="400" cy="86" r="2"/><circle cx="220" cy="74" r="2"/></g>
+            <circle cx="372" cy="76" r="30" fill="#cdd9e8" opacity=".8"/>
+            <circle cx="386" cy="70" r="26" fill="#16273d"/>
+            <path d="M0 210 Q120 188 240 206 T480 192 V270 H0 Z" fill="#122032"/>
+            <path d="M0 236 Q140 220 280 234 T480 224 V270 H0 Z" fill="#0a1420"/>
+            <g fill="#2c4a66"><path d="M80 210 l18 -40 l18 40 z"/><path d="M330 206 l16 -34 l16 34 z"/></g>
+          </svg>
+          <span class="gv-topic-status">更新至 第 9 期</span>
+        </div>
+        <div class="gv-topic-body">
+          <h3>全球光影 · 冬季片单</h3>
+          <p>从北欧冷调到南半球盛夏，精选 24 部具代表性的国际大片，配套解说、影评与创作手记。</p>
+          <div class="gv-topic-foot">
+            <span>12 位创作者参与</span>
+            <span class="gv-topic-bar"><i style="width:78%"></i></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="gv-topic">
+        <div class="gv-topic-cover">
+          <svg viewBox="0 0 480 270" role="img" aria-label="专题《幕后解码》封面：场记板与灯光">
+            <defs><linearGradient id="gvT2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2e2418"/><stop offset="1" stop-color="#131008"/></linearGradient></defs>
+            <rect width="480" height="270" fill="url(#gvT2)"/>
+            <g transform="rotate(-8 240 135)">
+              <rect x="140" y="86" width="200" height="112" rx="8" fill="#1c1710" stroke="#8a6a3a" stroke-width="3"/>
+              <rect x="140" y="86" width="200" height="30" fill="#8a6a3a"/>
+              <g fill="#1c1710"><rect x="150" y="94" width="22" height="14"/><rect x="186" y="94" width="22" height="14"/><rect x="222" y="94" width="22" height="14"/><rect x="258" y="94" width="22" height="14"/><rect x="294" y="94" width="22" height="14"/></g>
+              <g stroke="#c9a86a" stroke-width="2" opacity=".6"><path d="M160 140h160M160 162h110"/></g>
+            </g>
+            <circle cx="90" cy="72" r="20" fill="#f2b33d" opacity=".6"/>
+            <path d="M90 72 l52 40 l-52 40 z" fill="#f2b33d" opacity=".14"/>
+          </svg>
+          <span class="gv-topic-status">更新至 第 6 期</span>
+        </div>
+        <div class="gv-topic-body">
+          <h3>幕后解码</h3>
+          <p>从美术、声音到特效，逐层拆解国际大片幕后工业流程，让专业细节变得可感知。</p>
+          <div class="gv-topic-foot">
+            <span>8 位从业者访谈</span>
+            <span class="gv-topic-bar"><i style="width:52%"></i></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="gv-topic">
+        <div class="gv-topic-cover">
+          <svg viewBox="0 0 480 270" role="img" aria-label="专题《创作者镜头下的世界》封面：相机与地图网格">
+            <defs><linearGradient id="gvT3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a2c2a"/><stop offset="1" stop-color="#0b1414"/></linearGradient></defs>
+            <rect width="480" height="270" fill="url(#gvT3)"/>
+            <g stroke="#3a6b66" stroke-width="1" opacity=".7"><path d="M0 68h480M0 136h480M0 204h480M80 0v270M180 0v270M280 0v270M380 0v270"/></g>
+            <g fill="#4ec5d6" opacity=".85"><circle cx="180" cy="68" r="6"/><circle cx="280" cy="136" r="6"/><circle cx="380" cy="204" r="6"/><circle cx="80" cy="204" r="6"/></g>
+            <g stroke="#4ec5d6" stroke-width="2" fill="none" opacity=".55"><path d="M180 68 Q230 100 280 136 T380 204"/><path d="M80 204 Q130 170 180 68"/></g>
+            <rect x="196" y="176" width="88" height="58" rx="8" fill="#122220" stroke="#4ec5d6" stroke-width="2"/>
+            <circle cx="240" cy="205" r="17" fill="none" stroke="#4ec5d6" stroke-width="2"/>
+          </svg>
+          <span class="gv-topic-status">长期连载</span>
+        </div>
+        <div class="gv-topic-body">
+          <h3>创作者镜头下的世界</h3>
+          <p>每期邀请一位国际大片社区创作者，讲述作品背后的取景地、选择与坚持。</p>
+          <div class="gv-topic-foot">
+            <span>21 位创作者</span>
+            <span class="gv-topic-bar"><i style="width:64%"></i></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 创作者矩阵 -->
+<section class="gv-section gv-alt" id="gv-creators" aria-labelledby="gv-creators-title">
+  <div class="gv-container">
+    <div class="gv-sec-head">
+      <div>
+        <div class="gv-sec-eyebrow">CREATORS · 创作者</div>
+        <h2 class="gv-sec-title" id="gv-creators-title">平台签约创作者
+          <small>他们以专业与匠心，共同构建国际大片内容生态</small>
+        </h2>
+      </div>
+      <a href="#gv-wall" class="gv-sec-link">欣赏作品墙 →</a>
+    </div>
+    <div class="gv-creator-grid">
+
+      <article class="gv-creator">
+        <span class="gv-avatar" style="background:linear-gradient(135deg,#e63946,#8e1c26)">沈</span>
+        <h3>沈舟工作室</h3>
+        <div class="gv-creator-field">深度解析 · 叙事</div>
+        <p>专注国际大片的叙事结构与人物弧线拆解，作品以严谨的剧本分析见长，连续三年获社区年度创作者。</p>
+        <div class="gv-creator-nums">
+          <div><b>186</b>作品</div><div><b>42万</b>粉丝</div>
+        </div>
+        <button class="gv-act" type="button" style="margin-top:14px" data-gv-modal="creator" data-gv-name="沈舟工作室" data-gv-field="深度解析 · 叙事" data-gv-desc="专注国际大片的叙事结构与人物弧线拆解，擅长以剧本分析切入影像表达。">查看档案</button>
+      </article>
+
+      <article class="gv-creator">
+        <span class="gv-avatar" style="background:linear-gradient(135deg,#4ec5d6,#1e6d7e)">林</span>
+        <h3>林栖影像</h3>
+        <div class="gv-creator-field">城市探索 · 长镜头</div>
+        <p>偏爱长镜头与自然环境光，长期记录都市与港口题材，主张让画面自己说话。</p>
+        <div class="gv-creator-nums">
+          <div><b>124</b>作品</div><div><b>31万</b>粉丝</div>
+        </div>
+        <button class="gv-act" type="button" style="margin-top:14px" data-gv-modal="creator" data-gv-name="林栖影像" data-gv-field="城市探索 · 长镜头" data-gv-desc="偏爱长镜头与自然环境光，长期记录都市与港口题材，主张让画面自己说话。">查看档案</button>
+      </article>
+
+      <article class="gv-creator">
+        <span class="gv-avatar" style="background:linear-gradient(135deg,#f2b33d,#a5711a)">白</span>
+        <h3>白鹿访谈</h3>
+        <div class="gv-creator-field">人物访谈 · 幕后</div>
+        <p>以温和克制的提问风格著称，走访配音、译制与美术等幕后工作者，还原真实创作现场。</p>
+        <div class="gv-creator-nums">
+          <div><b>98</b>作品</div><div><b>27万</b>粉丝</div>
+        </div>
+        <button class="gv-act" type="button" style="margin-top:14px" data-gv-modal="creator" data-gv-name="白鹿访谈" data-gv-field="人物访谈 · 幕后" data-gv-desc="以温和克制的提问风格著称，走访配音、译制与美术等幕后工作者，还原真实创作现场。">查看档案</button>
+      </article>
+
+      <article class="gv-creator">
+        <span class="gv-avatar" style="background:linear-gradient(135deg,#5aa8bd,#22697d)">顾</span>
+        <h3>顾远行记</h3>
+        <div class="gv-creator-field">旅行见闻 · 自然</div>
+        <p>沿国际公路与海岸线行走，用影像记录风光与日常的交界，作品色彩冷峻而克制。</p>
+        <div class="gv-creator-nums">
+          <div><b>156</b>作品</div><div><b>36万</b>粉丝</div>
+        </div>
+        <button class="gv-act" type="button" style="margin-top:14px" data-gv-modal="creator" data-gv-name="顾远行记" data-gv-field="旅行见闻 · 自然" data-gv-desc="沿国际公路与海岸线行走，用影像记录风光与日常的交界，作品色彩冷峻而克制。">查看档案</button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 影像墙 -->
+<section class="gv-section" id="gv-wall" aria-labelledby="gv-wall-title">
+  <div class="gv-container">
+    <div class="gv-sec-head">
+      <div>
+        <div class="gv-sec-eyebrow">GALLERY · 影像墙</div>
+        <h2 class="gv-sec-title" id="gv-wall-title">社区影像作品墙
+          <small>来自国际大片社区的精选画面，以不同比例与质感呈现</small>
+        </h2>
+      </div>
+      <a href="#gv-stream" class="gv-sec-link">回到热门内容 →</a>
+    </div>
+    <div class="gv-wall">
+
+      <figure class="gv-wall-item gv-w-a">
+        <svg viewBox="0 0 400 400" role="img" aria-label="影像墙作品：黄昏下的跨海大桥">
+          <defs><linearGradient id="gvW1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a3350"/><stop offset="1" stop-color="#131c2c"/></linearGradient></defs>
+          <rect width="400" height="400" fill="url(#gvW1)"/>
+          <circle cx="300" cy="96" r="40" fill="#f2b33d" opacity=".7"/>
+          <path d="M0 280 Q200 250 400 278 V400 H0 Z" fill="#101a29"/>
+          <g stroke="#8fa4b8" stroke-width="3" opacity=".8" fill="none"><path d="M20 300 Q200 190 380 300"/><path d="M120 240 V300M280 240 V300"/></g>
+        </svg>
+        <span>黄昏跨海大桥 · 顾远行记</span>
+      </figure>
+
+      <figure class="gv-wall-item gv-w-b">
+        <svg viewBox="0 0 400 200" role="img" aria-label="影像墙作品：夜间城市天际线">
+          <defs><linearGradient id="gvW2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#10263a"/><stop offset="1" stop-color="#08131f"/></linearGradient></defs>
+          <rect width="400" height="200" fill="url(#gvW2)"/>
+          <g fill="#1c3550"><rect x="20" y="90" width="46" height="110"/><rect x="80" y="56" width="40" height="144"/><rect x="136" y="106" width="52" height="94"/><rect x="204" y="70" width="44" height="130"/><rect x="264" y="96" width="50" height="104"/><rect x="330" y="62" width="42" height="138"/></g>
+          <g fill="#f2b33d" opacity=".75"><rect x="92" y="76" width="7" height="10"/><rect x="108" y="76" width="7" height="10"/><rect x="216" y="92" width="7" height="10"/><rect x="342" y="84" width="7" height="10"/></g>
+        </svg>
+        <span>夜间天际线 · 林栖影像</span>
+      </figure>
+
+      <figure class="gv-wall-item gv-w-c">
+        <svg viewBox="0 0 400 400" role="img" aria-label="影像墙作品：拍摄现场轨道与灯架">
+          <defs><linearGradient id="gvW3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#26303c"/><stop offset="1" stop-color="#101820"/></linearGradient></defs>
+          <rect width="400" height="400" fill="url(#gvW3)"/>
+          <g stroke="#5a6b7d" stroke-width="3" fill="none"><path d="M30 320 L200 240 L370 320"/><path d="M30 350 L200 270 L370 350"/></g>
+          <g fill="#2f3d4c"><rect x="150" y="120" width="14" height="130"/><rect x="236" y="106" width="14" height="144"/></g>
+          <g fill="#e63946" opacity=".85"><rect x="120" y="92" width="74" height="30" rx="5"/><rect x="206" y="78" width="74" height="30" rx="5"/></g>
+        </svg>
+        <span>拍摄现场轨道 · 沈舟工作室</span>
+      </figure>
+
+      <figure class="gv-wall-item gv-w-d">
+        <svg viewBox="0 0 400 200" role="img" aria-label="影像墙作品：雨中车窗光影">
+          <defs><linearGradient id="gvW4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d2a3c"/><stop offset="1" stop-color="#0a121c"/></linearGradient></defs>
+          <rect width="400" height="200" fill="url(#gvW4)"/>
+          <g stroke="#4ec5d6" stroke-width="2" opacity=".55"><path d="M40 40 L80 160"/><path d="M140 24 L166 176"/><path d="M250 30 L272 172"/><path d="M340 44 L360 160"/></g>
+          <g fill="#f2b33d" opacity=".65"><circle cx="120" cy="70" r="9"/><circle cx="290" cy="112" r="7"/></g>
+        </svg>
+        <span>雨中车窗光影 · 陆离调色间</span>
+      </figure>
+
+      <figure class="gv-wall-item gv-w-e">
+        <svg viewBox="0 0 600 200" role="img" aria-label="影像墙作品：影院幕布前的一排空座">
+          <defs><linearGradient id="gvW5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1d26"/><stop offset="1" stop-color="#100a10"/></linearGradient></defs>
+          <rect width="600" height="200" fill="url(#gvW5)"/>
+          <rect x="80" y="24" width="440" height="100" rx="4" fill="#e8e2d2" opacity=".92"/>
+          <g fill="#4a2028"><rect x="40" y="140" width="100" height="50" rx="12"/><rect x="160" y="140" width="100" height="50" rx="12"/><rect x="280" y="140" width="100" height="50" rx="12"/><rect x="400" y="140" width="100" height="50" rx="12"/><rect x="520" y="140" width="60" height="50" rx="12"/></g>
+        </svg>
+        <span>影院幕布与空座 · 程叙记录</span>
+      </figure>
+
+      <figure class="gv-wall-item gv-w-f">
+        <svg viewBox="0 0 400 340" role="img" aria-label="影像墙作品：山谷晨雾与公路">
+          <defs><linearGradient id="gvW6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b5a52"/><stop offset="1" stop-color="#14211f"/></linearGradient></defs>
+          <rect width="400" height="340" fill="url(#gvW6)"/>
+          <path d="M0 190 L120 110 L220 190 L320 120 L400 190 V340 H0 Z" fill="#1b2d2a"/>
+          <path d="M0 240 Q200 214 400 238 V340 H0 Z" fill="#0f1a19"/>
+          <path d="M170 340 L210 250 L230 250 L280 340 Z" fill="#3a4a48" opacity=".7"/>
+          <g fill="#cfe0da" opacity=".22"><ellipse cx="200" cy="200" rx="150" ry="20"/><ellipse cx="120" cy="224" rx="110" ry="14"/></g>
+        </svg>
+        <span>山谷晨雾公路 · 顾远行记</span>
+      </figure>
+
+      <figure class="gv-wall-item gv-w-g">
+        <svg viewBox="0 0 600 200" role="img" aria-label="影像墙作品：剧本与咖啡的深夜桌面">
+          <defs><linearGradient id="gvW7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#33291c"/><stop offset="1" stop-color="#161009"/></linearGradient></defs>
+          <rect width="600" height="200" fill="url(#gvW7)"/>
+          <g transform="rotate(-4 240 110)"><rect x="140" y="60" width="200" height="110" rx="4" fill="#e8e2d2" opacity=".92"/>
+            <g stroke="#8a7a5a" stroke-width="2" opacity=".7"><path d="M160 84h160M160 104h130M160 124h150M160 144h96"/></g>
+          </g>
+          <g><ellipse cx="420" cy="140" rx="52" ry="14" fill="#241a0e"/><rect x="376" y="96" width="88" height="46" rx="8" fill="#2e2216"/><ellipse cx="420" cy="96" rx="44" ry="12" fill="#4a3620"/></g>
+          <circle cx="510" cy="70" r="22" fill="#f2b33d" opacity=".55"/>
+        </svg>
+        <span>剧本与咖啡 · 白鹿访谈</span>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- 用户评价 -->
+<section class="gv-section gv-alt" id="gv-voices" aria-labelledby="gv-voices-title">
+  <div class="gv-container">
+    <div class="gv-sec-head">
+      <div>
+        <div class="gv-sec-eyebrow">VOICES · 用户之声</div>
+        <h2 class="gv-sec-title" id="gv-voices-title">社区真实评价
+          <small>来自不同背景的用户，分享他们与国际大片内容生态的日常</small>
+        </h2>
+      </div>
+    </div>
+    <div class="gv-comment-grid">
+
+      <article class="gv-comment">
+        <div class="gv-comment-head"><span class="gv-avatar" style="background:linear-gradient(135deg,#e63946,#8e1c26)">何</span><div><strong>何以观影</strong><small>注册用户 · 2 年</small></div></div>
+        <p>作为长期关注国际大片的影迷，最打动我的是这里的解说不是简单复述剧情，而是把镜头语言、剪辑节奏讲清楚。看完再去回看原片，能发现很多之前忽略的细节。</p>
+        <div class="gv-comment-foot"><span>赞 128</span><span>11-15</span></div>
+      </article>
+
+      <article class="gv-comment">
+        <div class="gv-comment-head"><span class="gv-avatar" style="background:linear-gradient(135deg,#4ec5d6,#1e6d7e)">谈</span><div><strong>谈山记</strong><small>签约创作者 · 摄影方向</small></div></div>
+        <p>投稿流程很清晰，审核反馈也很具体。我之前上传的一支短纪录片被编辑指出了配乐与画面对位的问题，按照建议重剪后，观感提升非常明显。</p>
+        <div class="gv-comment-foot"><span>赞 96</span><span>11-13</span></div>
+      </article>
+
+      <article class="gv-comment">
+        <div class="gv-comment-head"><span class="gv-avatar" style="background:linear-gradient(135deg,#f2b33d,#a5711a)">木</span><div><strong>木末之南</strong><small>注册用户 · 1 年</small></div></div>
+        <p>这里的专题编排很有条理，冬季片单我基本一部一部跟着看完。高清画质和片单的注释文字，让下班后的两个小时变得格外安静。</p>
+        <div class="gv-comment-foot"><span>赞 74</span><span>11-12</span></div>
+      </article>
+
+      <article class="gv-comment">
+        <div class="gv-comment-head"><span class="gv-avatar" style="background:linear-gradient(135deg,#5aa8bd,#22697d)">拾</span><div><strong>拾光的人</strong><small>注册用户 · 3 年</small></div></div>
+        <p>最喜欢「幕后解码」这个企划。以前总觉得幕后离自己很远，现在能看到灯光组、声音组的真实工作流程，甚至会因此重新理解一场戏。</p>
+        <div class="gv-comment-foot"><span>赞 210</span><span>11-10</span></div>
+      </article>
+
+      <article class="gv-comment">
+        <div class="gv-comment-head"><span class="gv-avatar" style="background:linear-gradient(135deg,#b76c54,#6d3324)">程</span><div><strong>程叙记录</strong><small>签约创作者 · 纪实方向</small></div></div>
+        <p>平台的创作者工具里，素材管理部分做得很细，标签体系让我整理几百条素材时不用再翻文件夹。希望以后能增加多端同步。</p>
+        <div class="gv-comment-foot"><span>赞 63</span><span>11-09</span></div>
+      </article>
+
+      <article class="gv-comment">
+        <div class="gv-comment-head"><span class="gv-avatar" style="background:linear-gradient(135deg,#8f7a4a,#4a3c1d)">陆</span><div><strong>陆离调色间</strong><small>注册用户 · 半年</small></div></div>
+        <p>调色教程是我常看的内容，讲解不堆术语，给的都是能直接拿去试的方法。社区里讨论也很友善，问的问题基本都有人认真回。</p>
+        <div class="gv-comment-foot"><span>赞 51</span><span>11-08</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 品牌深度解析 -->
+<section class="gv-section" id="gv-about" aria-labelledby="gv-about-title">
+  <div class="gv-container">
+    <div class="gv-sec-head">
+      <div>
+        <div class="gv-sec-eyebrow">ABOUT · 品牌解析</div>
+        <h2 class="gv-sec-title" id="gv-about-title">关于国际大片内容生态
+          <small>一个持续运营九年的视频品牌，如何理解影像与人的关系</small>
+        </h2>
+      </div>
+    </div>
+    <div class="gv-about-grid">
+      <div class="gv-about-copy">
+        <p>国际大片是一个内容维度极宽的关键词。它既指向来自不同语言与文化背景的影像作品，也指向观众在观看之后所形成的那一层理解与讨论。光影视界作为深耕这一垂直领域的品牌官网，从一开始就没有把自身定义为单纯的播放窗口，而是把重点放在<b>解读、拆解与再创作</b>上：一部作品为什么这样开场，一场戏为什么选择长镜头，一段配乐为什么在这个时间点进入——这些问题构成了平台内容的骨架。</p>
+        <p>过去九年，我们与超过一百八十位创作者建立了长期合作，其中既有独立导演、影评人与摄影指导，也有译制工作者、剪辑师与调色师。他们贡献的原创内容覆盖叙事分析、幕后流程、行业观察、城市探索与人物访谈等方向，共同构成了一个多元而包容的内容生态。平台坚持正版与高清的素材标准，所有上架内容经过编辑团队与专业顾问的双重编审，确保信息准确、表达克制。</p>
+        <h3>我们如何组织内容</h3>
+        <p>平台内容以专题为骨架，以创作者为核心节点。一个专题往往包含多期节目、配套文章与延伸片单，帮助用户从一部作品延伸到一类作品，再到一个时代或一个地域的影像脉络。我们相信，真正有价值的内容不是一次性的点击，而是可以反复回看、持续讨论的<b>精品内容</b>。因此每一期节目都会保留完整的参考资料与创作手记，方便观众按图索骥。</p>
+        <h3>对创作者的支持</h3>
+        <p>创作从来不是孤立的行为。平台为创作者提供素材整理工具、脚本灵感提示、标题与标签建议，以及定期的线上交流与线下放映活动。我们设立了影像创作挑战赛，每年以不同主题征集作品，鼓励新人以真实的视角表达自己的观察。比赛不追求流量指标，而更看重表达的完整度与真诚度。对于有潜力的创作者，平台会提供拍摄资源与后期支持，帮助作品以更好的状态与观众见面。</p>
+        <div class="gv-about-quote">我们始终认为，影像的力量来自真实。一个镜头之所以动人，往往不是因为技术多么复杂，而是因为它诚实地说出了某个人、某个地方、某个时刻的样子。</div>
+        <h3>面向未来</h3>
+        <p>内容行业正在快速变化，观众的注意力被不断切分。光影视界希望在变化中守住一些稳定的东西：对作品的尊重，对创作者的陪伴，对用户的真诚。我们会继续以匠心打磨每一个专题，以创新探索更好的表达方式，也欢迎更多同好加入这个社区，一起把国际大片这件事讲得更清楚、更温暖。</p>
+      </div>
+      <div class="gv-about-side">
+        <div class="gv-about-card">
+          <h4><i>01</i>品牌定位</h4>
+          <p>国际大片领域的原创影像内容平台，以深度解析与幕后记录为核心，服务影迷、创作者与行业从业者。</p>
+        </div>
+        <div class="gv-about-card">
+          <h4><i>02</i>内容标准</h4>
+          <p>正版素材、高清画质、双重编审。所有节目保留创作手记与参考资料，拒绝标题化与碎片化表达。</p>
+        </div>
+        <div class="gv-about-card">
+          <h4><i>03</i>社区规则</h4>
+          <p>鼓励理性讨论与专业交流，反对人身攻击与未经授权的搬运。举报内容会在 48 小时内完成核查。</p>
+        </div>
+        <div class="gv-about-card">
+          <h4><i>04</i>持续运营</h4>
+          <p>自 2017 年起持续更新，累计上线专题四十余个，与一百八十余位创作者保持长期合作。</p>
+        </div>
+        <div class="gv-about-card">
+          <h4><i>05</i>社会责任</h4>
+          <p>定期开放公益放映与青年影像工作坊，为在校学生提供拍摄指导与设备支持，推动影像教育普及。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 企业动态 -->
+<section class="gv-section gv-alt" id="gv-news" aria-labelledby="gv-news-title">
+  <div class="gv-container">
+    <div class="gv-sec-head">
+      <div>
+        <div class="gv-sec-eyebrow">NEWS · 企业动态</div>
+        <h2 class="gv-sec-title" id="gv-news-title">官方发布与更新日志
+          <small>了解光影视界的最新企划、活动与平台变化</small>
+        </h2>
+      </div>
+    </div>
+    <div class="gv-news-grid">
+      <article class="gv-news-item">
+        <div class="gv-news-date"><b>18</b><span>11月</span></div>
+        <div>
+          <h3>冬季片单专题新增 12 部国际佳作解说</h3>
+          <p>本次更新覆盖北欧、南欧与东亚三个区域，配套解说与片单注释同步上线，支持按区域筛选浏览。</p>
+        </div>
+      </article>
+      <article class="gv-news-item">
+        <div class="gv-news-date"><b>16</b><span>11月</span></div>
+        <div>
+          <h3>影像创作挑战赛第三季开放报名</h3>
+          <p>本期主题为「跨文化叙事」，面向所有注册创作者开放，报名后可获得拍摄大纲与分镜模板下载权益。</p>
+        </div>
+      </article>
+      <article class="gv-news-item">
+        <div class="gv-news-date"><b>14</b><span>11月</span></div>
+        <div>
+          <h3>品牌官网创作者中心上线高清素材权益</h3>
+          <p>签约创作者可在创作者中心下载高清转场素材与音效包，用于非商业创作项目，详情见权益说明。</p>
+        </div>
+      </article>
+      <article class="gv-news-item">
+        <div class="gv-news-date"><b>11</b><span>11月</span></div>
+        <div>
+          <h3>「幕后解码」更新：国际合拍片的声音设计</h3>
+          <p>本期邀请两位声音指导，围绕环境声采集与混音流程展开对谈，片长 38 分钟，附完整参考片目。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="gv-section" id="gv-faq" aria-labelledby="gv-faq-title">
+  <div class="gv-container">
+    <div class="gv-sec-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center">
+      <div>
+        <div class="gv-sec-eyebrow">FAQ · 帮助中心</div>
+        <h2 class="gv-sec-title" id="gv-faq-title">常见问题
+          <small>关于国际大片内容、创作与社区使用的常见疑问</small>
+        </h2>
+      </div>
+    </div>
+    <div class="gv-faq">
+      <details open>
+        <summary>平台的内容以什么标准筛选？</summary>
+        <p>平台内容围绕国际大片这一主题展开，优先收录具原创观点、资料翔实、影像质量达标的内容。所有作品需通过编辑初审与专业顾问复审两道流程，涉及版权素材的节目须提供授权说明。我们不做简单的剧情搬运，更看重创作者是否提供了属于自己的观察角度。</p>
+      </details>
+      <details>
+        <summary>如何成为平台签约创作者？</summary>
+        <p>注册账号后可在创作者中心提交申请，附上三支代表作与创作方向说明。审核周期通常为七到十个工作日，通过后会获得专属创作顾问、素材权益与专题合作机会。即使暂未签约，所有用户依然可以上传作品并参与社区讨论。</p>
+      </details>
+      <details>
+        <summary>投稿作品的版权归属如何约定？</summary>
+        <p>作品著作权始终归创作者本人所有。平台仅在获得授权的前提下进行展示与专题推荐，不会擅自转授权给第三方。如创作者希望下架作品，可在创作者中心提交申请，平台将在三个工作日内处理完成。</p>
+      </details>
+      <details>
+        <summary>是否提供拍摄与后期的学习资源？</summary>
+        <p>提供。平台的教程板块涵盖脚本写作、分镜设计、剪辑节奏、调色基础与声音处理等方向，多数课程配有可下载的案例工程文件。签约创作者还可参与每月一次的线上工作坊，与行业从业者直接交流。</p>
+      </details>
+      <details>
+        <summary>影像创作挑战赛如何评奖？</summary>
+        <p>评审分为专业评审与社区投票两部分，专业评审关注叙事完整度、影像表达与主题贴合度，社区投票则反映作品的共鸣程度。两部分权重各占一半。评选结果会在官网公示，并附评审意见摘要，方便参赛者复盘。</p>
+      </details>
+      <details>
+        <summary>发现内容存在问题如何反馈？</summary>
+        <p>每支作品页面均设有反馈入口，可选择版权、内容准确性或其他类型。提交后系统会生成反馈编号，核查结果将在四十八小时内通过站内通知告知。对于涉及版权争议的内容，平台会先行下架并启动复核流程。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 联系 -->
+<section class="gv-section gv-contact" id="gv-contact" aria-labelledby="gv-contact-title">
+  <div class="gv-container gv-contact-inner">
+    <div>
+      <div class="gv-sec-eyebrow">CONTACT · 联系我们</div>
+      <h2 id="gv-contact-title">与光影视界一起，<br>把好故事讲给更多人</h2>
+      <p>无论你是想投稿作品、寻求品牌合作，还是希望参与线下放映与工作坊，都欢迎通过以下方式与我们取得联系。企业合作与媒体沟通请在邮件标题中注明用途，我们会尽快安排专人对接。</p>
+      <div class="gv-contact-actions">
+        <button class="gv-btn-primary" type="button" data-gv-modal="submit">
+          提交投稿意向
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <button class="gv-btn-ghost" type="button" data-gv-modal="share">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+          分享官网
+        </button>
+      </div>
+    </div>
+    <div class="gv-contact-info">
+      <div><i>邮</i><span><b>商务与投稿</b>hello@guangying-vision.example</span></div>
+      <div><i>合</i><span><b>品牌合作</b>合作请附公司名称与需求简述</span></div>
+      <div><i>社</i><span><b>社区运营</b>工作日 10:00–19:00 在线响应</span></div>
+      <div><i>址</i><span><b>线下空间</b>光影视界影像交流中心 · 面向预约访客开放</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="gv-footer">
+  <div class="gv-container">
+    <div class="gv-footer-top">
+      <div class="gv-footer-brand">
+        <a class="gv-logo" href="#gv-top" aria-label="光影视界官网">
+          <span class="gv-logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 4l13 8-13 8z" fill="#fff"/></svg>
+          </span>
+          <span class="gv-logo-text">
+            <strong>光影视界</strong>
+            <span>GUANGYING VISION</span>
+          </span>
+        </a>
+        <p>光影视界官方网站 · 专注国际大片领域的原创影像内容平台。以专业解读与真实记录，连接全球影迷与创作者，持续构建值得信赖的内容生态。</p>
+      </div>
+      <div class="gv-footer-col">
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#gv-focus">焦点影像</a></li>
+          <li><a href="#gv-stream">热门内容</a></li>
+          <li><a href="#gv-topics">专题企划</a></li>
+          <li><a href="#gv-wall">影像作品墙</a></li>
+        </ul>
+      </div>
+      <div class="gv-footer-col">
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#gv-creators">签约创作者</a></li>
+          <li><a href="#gv-voices">用户之声</a></li>
+          <li><a href="#gv-news">企业动态</a></li>
+          <li><a href="#gv-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div class="gv-footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#gv-about">品牌故事</a></li>
+          <li><a href="#gv-contact">联系我们</a></li>
+          <li><a href="#gv-faq">版权说明</a></li>
+          <li><a href="#gv-top">返回首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="gv-footer-bottom">
+      <span>© 2017–2026 光影视界 版权所有 · 持续运营中 · 官方网站</span>
+      <span>内容编审与素材授权均由平台统一管理</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="gv-top-btn" id="gv-top-btn" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<!-- 弹窗 -->
+<div class="gv-modal" id="gv-modal-share" aria-hidden="true" role="dialog" aria-modal="true" aria-label="分享官网">
+  <div class="gv-modal-box">
+    <button class="gv-modal-close" type="button" data-gv-close aria-label="关闭">×</button>
+    <h3>分享光影视界</h3>
+    <p class="gv-modal-sub">把国际大片的精彩内容分享给更多同好。</p>
+    <div class="gv-share-list">
+      <button class="gv-share-item" type="button" data-gv-toast="已生成微信分享卡片"><i>微</i>微信</button>
+      <button class="gv-share-item" type="button" data-gv-toast="已生成微博分享链接"><i>博</i>微博</button>
+      <button class="gv-share-item" type="button" data-gv-toast="已生成 QQ 分享链接"><i>Q</i>QQ</button>
+      <button class="gv-share-item" type="button" id="gv-copy-link"><i>链</i>复制链接</button>
+    </div>
+  </div>
+</div>
+
+<div class="gv-modal" id="gv-modal-submit" aria-hidden="true" role="dialog" aria-modal="true" aria-label="投稿意向">
+  <div class="gv-modal-box">
+    <button class="gv-modal-close" type="button" data-gv-close aria-label="关闭">×</button>
+    <h3>提交投稿意向</h3>
+    <p class="gv-modal-sub">填写基本信息，创作顾问将在三个工作日内与你联系。</p>
+    <form id="gv-submit-form">
+      <div class="gv-field"><label for="gv-f-name">创作者昵称</label><input id="gv-f-name" type="text" placeholder="例如：林栖影像" required></div>
+      <div class="gv-field"><label for="gv-f-type">作品方向</label>
+        <select id="gv-f-type">
+          <option>叙事解析</option><option>幕后记录</option><option>人物访谈</option><option>城市探索</option><option>调色与后期</option>
+        </select>
+      </div>
+      <div class="gv-field"><label for="gv-f-desc">作品简介</label><textarea id="gv-f-desc" placeholder="简单介绍你的作品主题、时长与拍摄背景"></textarea></div>
+      <button class="gv-btn-primary" type="submit" style="width:100%;justify-content:center">提交意向</button>
+    </form>
+  </div>
+</div>
+
+<div class="gv-modal" id="gv-modal-report" aria-hidden="true" role="dialog" aria-modal="true" aria-label="内容反馈">
+  <div class="gv-modal-box">
+    <button class="gv-modal-close" type="button" data-gv-close aria-label="关闭">×</button>
+    <h3>内容反馈</h3>
+    <p class="gv-modal-sub">请选择问题类型，我们会在四十八小时内完成核查。</p>
+    <form id="gv-report-form">
+      <div class="gv-field"><label for="gv-r-type">问题类型</label>
+        <select id="gv-r-type">
+          <option>版权相关</option><option>内容准确性</option><option>画质与音质</option><option>其他问题</option>
+        </select>
+      </div>
+      <div class="gv-field"><label for="gv-r-desc">问题描述</label><textarea id="gv-r-desc" placeholder="请说明具体问题，便于我们快速定位"></textarea></div>
+      <button class="gv-btn-primary" type="submit" style="width:100%;justify-content:center">提交反馈</button>
+    </form>
+  </div>
+</div>
+
+<div class="gv-modal" id="gv-modal-creator" aria-hidden="true" role="dialog" aria-modal="true" aria-label="创作者档案">
+  <div class="gv-modal-box">
+    <button class="gv-modal-close" type="button" data-gv-close aria-label="关闭">×</button>
+    <h3 id="gv-creator-name">创作者档案</h3>
+    <p class="gv-modal-sub" id="gv-creator-field">擅长领域</p>
+    <p id="gv-creator-desc" style="font-size:13.5px;color:#b8c4d6;line-height:1.85;margin-bottom:20px"></p>
+    <button class="gv-btn-primary" type="button" style="width:100%;justify-content:center" data-gv-toast="已关注该创作者">关注创作者</button>
+  </div>
+</div>
+
+<div class="gv-toast" id="gv-toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var gvBody = document.body;
+
+  /* 移动端导航 */
+  var burger = document.getElementById('gv-burger');
+  var nav = document.getElementById('gv-nav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('gv-open');
+      burger.classList.toggle('gv-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('gv-open');
+        burger.classList.remove('gv-open');
+        burger.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
+  /* Toast */
+  var toast = document.getElementById('gv-toast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('gv-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('gv-show'); }, 2300);
+  }
+
+  /* 弹窗 */
+  function openModal(id){
+    var m = document.getElementById('gv-modal-' + id);
+    if(!m) return;
+    m.classList.add('gv-show');
+    m.setAttribute('aria-hidden','false');
+    gvBody.style.overflow = 'hidden';
+  }
+  function closeModals(){
+    document.querySelectorAll('.gv-modal.gv-show').forEach(function(m){
+      m.classList.remove('gv-show');
+      m.setAttribute('aria-hidden','true');
+    });
+    gvBody.style.overflow = '';
+  }
+  document.querySelectorAll('[data-gv-modal]').forEach(function(el){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      var id = el.getAttribute('data-gv-modal');
+      if(id === 'creator'){
+        var n = document.getElementById('gv-creator-name');
+        var f = document.getElementById('gv-creator-field');
+        var d = document.getElementById('gv-creator-desc');
+        if(n) n.textContent = el.getAttribute('data-gv-name') || '创作者档案';
+        if(f) f.textContent = el.getAttribute('data-gv-field') || '';
+        if(d) d.textContent = el.getAttribute('data-gv-desc') || '';
+      }
+      openModal(id);
+    });
+  });
+  document.querySelectorAll('[data-gv-close]').forEach(function(el){
+    el.addEventListener('click', closeModals);
+  });
+  document.querySelectorAll('.gv-modal').forEach(function(m){
+    m.addEventListener('click', function(e){
+      if(e.target === m) closeModals();
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModals();
+  });
+
+  /* 点赞 / 收藏 */
+  document.querySelectorAll('[data-gv-like]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      var numEl = btn.querySelector('[data-gv-num]');
+      var on = btn.classList.toggle('gv-on');
+      var svgPath = btn.querySelector('svg path');
+      if(svgPath){
+        if(on){ svgPath.setAttribute('fill','currentColor'); }
+        else { svgPath.setAttribute('fill','none'); }
+      }
+      if(numEl){
+        var n = parseInt(numEl.textContent, 10) || 0;
+        numEl.textContent = String(on ? n + 1 : Math.max(0, n - 1));
+      }
+      showToast(on ? '已加入收藏' : '已取消收藏');
+    });
+  });
+
+  /* 数字滚动 */
+  var counters = document.querySelectorAll('[data-gv-count]');
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-gv-count'), 10) || 0;
+      var suffix = el.querySelector('i');
+      var suffixHTML = suffix ? suffix.outerHTML : '';
+      var start = null;
+      var dur = 1400;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var val = Math.floor(target * eased);
+        el.innerHTML = (val >= 10000 ? (val / 10000).toFixed(1) : val) + suffixHTML;
+        if(p < 1) requestAnimationFrame(step);
+        else {
+          var show = target >= 10000 ? (target / 10000).toFixed(1) : target;
+          el.innerHTML = show + suffixHTML;
+        }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCounters(); io.disconnect(); }
+      });
+    }, { threshold: 0.35 });
+    var stats = document.querySelector('.gv-hero-stats');
+    if(stats) io.observe(stats);
+  } else {
+    runCounters();
+  }
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('gv-search-input');
+  var searchFeedback = document.getElementById('gv-search-feedback');
+  var searchTimer = null;
+  var suggestions = ['远洋来信','幕后解码','冬季片单','林栖影像','胶片颗粒','人物访谈','城市探索','配音演员'];
+  if(searchInput && searchFeedback){
+    searchInput.addEventListener('input', function(){
+      var q = searchInput.value.trim();
+      clearTimeout(searchTimer);
+      if(!q){
+        searchFeedback.classList.remove('gv-show');
+        return;
+      }
+      searchTimer = setTimeout(function(){
+        var hits = suggestions.filter(function(s){ return s.indexOf(q) > -1; });
+        var msg;
+        if(/[\u4e00-\u9fa5a-zA-Z]/.test(q)){
+          if(hits.length){
+            msg = '找到 ' + hits.length + ' 个相关方向：' + hits.slice(0,3).join('、');
+          } else {
+            msg = '暂未匹配到「' + q + '」，可尝试「幕后解码」「城市探索」';
+          }
+        } else {
+          msg = '请输入中文或英文关键词，例如「专题」「访谈」';
+        }
+        searchFeedback.textContent = msg;
+        searchFeedback.classList.add('gv-show');
+      }, 320);
+    });
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){
+        e.preventDefault();
+        var q = searchInput.value.trim();
+        if(q){
+          showToast('已按「' + q + '」筛选相关内容');
+          var stream = document.getElementById('gv-stream');
+          if(stream) stream.scrollIntoView({behavior:'smooth'});
+        }
+      }
+    });
+    document.addEventListener('click', function(e){
+      if(!e.target.closest('.gv-search') && !e.target.closest('#gv-search-feedback')){
+        searchFeedback.classList.remove('gv-show');
+      }
+    });
+  }
+
+  /* 表单 */
+  var submitForm = document.getElementById('gv-submit-form');
+  if(submitForm){
+    submitForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('gv-f-name');
+      if(name && !name.value.trim()){
+        showToast('请填写创作者昵称');
+        name.focus();
+        return;
+      }
+      closeModals();
+      showToast('投稿意向已提交，顾问将在三个工作日内联系');
+      submitForm.reset();
+    });
+  }
+  var reportForm = document.getElementById('gv-report-form');
+  if(reportForm){
+    reportForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeModals();
+      showToast('反馈已提交，核查结果将通过站内通知告知');
+      reportForm.reset();
+    });
+  }
+
+  /* 复制链接 */
+  var copyBtn = document.getElementById('gv-copy-link');
+  if(copyBtn){
+    copyBtn.addEventListener('click', function(){
+      var text = '光影视界 · 国际大片影像门户';
+      function fallback(){
+        try{
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          showToast('链接已复制到剪贴板');
+        }catch(err){
+          showToast('复制失败，请手动分享');
+        }
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          showToast('链接已复制到剪贴板');
+        }).catch(fallback);
+      } else {
+        fallback();
+      }
+    });
+  }
+
+  /* 通用 toast 按钮 */
+  document.querySelectorAll('[data-gv-toast]').forEach(function(el){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      showToast(el.getAttribute('data-gv-toast'));
+    });
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('gv-top-btn');
+  if(topBtn){
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 620) topBtn.classList.add('gv-show');
+      else topBtn.classList.remove('gv-show');
+    }, { passive: true });
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* 导航高亮 */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.gv-nav a[href^="#"]'));
+  var sections = navLinks.map(function(a){
+    var id = a.getAttribute('href');
+    return id && id.length > 1 ? document.querySelector(id) : null;
+  });
+  window.addEventListener('scroll', function(){
+    var pos = window.scrollY + 150;
+    var idx = 0;
+    sections.forEach(function(sec, i){
+      if(sec && sec.offsetTop <= pos) idx = i;
+    });
+    navLinks.forEach(function(a, i){
+      a.classList.toggle('gv-active', i === idx);
+    });
+  }, { passive: true });
+
+})();
+</script>
+</body>
+            </html>
